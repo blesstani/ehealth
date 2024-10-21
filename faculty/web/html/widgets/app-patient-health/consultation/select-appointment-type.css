@@ -1,0 +1,68 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet works the on the view, where the patient selects the type of appointment he's going to have
+*/
+
+.hc-ehealthi-app-patient-health-appointment-select-type>.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-app-patient-health-appointment-select-type>.container>.items {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 0.5em;
+}
+
+.hc-ehealthi-app-patient-health-appointment-select-type-item>.container {
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 0.75em;
+    padding: 0.5em;
+    background-color: white;
+    transition: 0.5s 0.25s;
+}
+
+.hc-ehealthi-app-patient-health-appointment-select-type-item.selected>.container {
+    box-shadow: 0px 0px 0.75em var(--accent-color);
+}
+
+.hc-ehealthi-app-patient-health-appointment-select-type-item>.container>.main {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+
+.hc-ehealthi-app-patient-health-appointment-select-type-item>.container>.main>.icon {
+    width: 3em;
+    height: 3em;
+    border-radius: 0.5em;
+}
+
+.hc-ehealthi-app-patient-health-appointment-select-type-item>.container>.main>.details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.hc-ehealthi-app-patient-health-appointment-select-type-item>.container>.main>.details>.label {
+    font-size: 1.35em;
+    font-weight: 900;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.hc-ehealthi-app-patient-health-appointment-select-type-item>.container>.main>.details>.description {
+    font-size: 0.85em;
+    opacity: 0.7;
+    font-weight: 400;
+    max-width: 100%;
+    max-height: calc(100% - 2em);
+    overflow: none;
+    text-overflow: ellipsis;
+}

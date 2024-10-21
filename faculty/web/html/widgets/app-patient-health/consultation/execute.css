@@ -1,0 +1,44 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet modifies the parts of the app-patient-health widget, where the user gets to actually schedule the appointment
+*/
+
+.hc-ehealthi-app-patient-health-appointment-exec>.container>.stage {
+    min-height: calc(var(--hc-ehealthi-device-frame-view-available-height) - 15.5em);
+}
+
+.hc-ehealthi-app-patient-health-appointment-exec>.container>.btn-continue>.hc-action-button {
+    width: 100%;
+    --color-primary: var(--theme-color);
+    --color-secondary: black;
+
+}
+
+.hc-ehealthi-app-patient-health-appointment-post-create>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    min-height: calc(var(--hc-ehealthi-device-frame-view-available-height) - 25.5em);
+    justify-content: center;
+}
+
+.hc-ehealthi-app-patient-health-appointment-post-create>.container>.tick {
+    font-size: 7.5em;
+    width: 1em;
+    height: 1em;
+    background-color: var(--theme-color);
+    padding: 0.5em;
+    border-radius: 50%;
+    color: white;
+}
+
+.hc-ehealthi-app-patient-health-appointment-post-create>.container>.tick>.hc-animated-tick>.container>svg>.stroke {
+    transition: 1.5s 0.125s;
+}
+
+.hc-ehealthi-app-patient-health-appointment-post-create>.container>.text {
+    max-width: clamp(100px, 80%, 450px);
+    text-align: center;
+}

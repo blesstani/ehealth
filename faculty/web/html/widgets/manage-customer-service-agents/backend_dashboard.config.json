@@ -1,0 +1,10 @@
+{
+    "admin": [
+        {
+            "label": "Customer Service Agents",
+            "group": "",
+            "name": "manage_customer_service_agents",
+            "view": "./widget.mjs"
+        }
+    ]
+}

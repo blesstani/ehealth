@@ -1,0 +1,24 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The Tele-Epilepsy Project
+    This stylesheet controls the feeds widget
+*/
+
+
+.hc-telep-web-feeds-view>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hc-telep-web-feeds-view>.container>.title {
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-family: robotoBold;
+}
+
+.hc-telep-web-feeds-view>.container>.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

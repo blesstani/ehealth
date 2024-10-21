@@ -1,0 +1,14 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    The Faculty of Health
+    This stylesheet is meant for the intake-input widget, where the user (doctor), enters details of how the prescription should be taken 
+    within a given day.
+*/
+
+
+.hc-ehealthi-health-intake-input>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}

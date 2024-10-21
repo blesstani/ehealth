@@ -1,0 +1,106 @@
+/* 
+    Copyright 2023 HolyCorn Software
+    The cayofedpeople Project
+    This stylesheet is meant for the moto widget
+*/
+
+.hc-cayofedpeople-moto {
+    padding-top: 3em;
+}
+
+.hc-cayofedpeople-moto>.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4fddd4;
+    color: #073e69;
+    padding-top: 15em;
+    padding-bottom: 10em;
+
+}
+
+.hc-cayofedpeople-moto>.container>.main {
+    display: flex;
+    border: 2px solid currentColor;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    padding-bottom: 1em;
+    min-width: calc(50vw - 2em);
+    min-height: calc(15vw + 30vh);
+    position: relative;
+    background-color: inherit;
+}
+
+.hc-cayofedpeople-moto>.container>.main>.content {
+    font-weight: bolder;
+    padding-top: 1em;
+    font-size: clamp(1.5em, 3em, 8vw);
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    font-family: jua;
+}
+
+.hc-cayofedpeople-moto>.container>.main>.label {
+    font-weight: lighter;
+    text-align: right;
+    padding-top: 5em;
+    width: 100%;
+}
+
+.hc-cayofedpeople-moto>.container>.main>.quote-image {
+    background-color: inherit;
+}
+
+.hc-cayofedpeople-moto>.container>.main>.quote-image>* {
+    width: 20%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-color: inherit;
+    transform: rotate(8deg);
+    padding-left: 2%;
+    top: -15%;
+    left: 5%;
+
+    stroke-dasharray: 2% 275%;
+    stroke-opacity: 0.2;
+    animation: 3s hc-cayofedpeople-info-moto-dashed-lines infinite forwards;
+}
+
+
+@keyframes hc-cayofedpeople-info-moto-dashed-lines {
+
+    /** Drawing */
+    0% {
+
+        stroke-dasharray: 2% 275%;
+    }
+
+    /** Fully drawn */
+    30% {
+
+        stroke-dasharray: 270% 0%;
+        stroke-opacity: 1;
+        stroke-dashoffset: 0%;
+    }
+
+    40% {
+
+        stroke-dasharray: 270% 0%;
+        stroke-opacity: 1;
+        stroke-dashoffset: 0%;
+    }
+
+    /** Retracting */
+    100% {
+        stroke-dasharray: 2% 275%;
+        stroke-dashoffset: 270%;
+    }
+}

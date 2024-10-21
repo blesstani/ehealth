@@ -1,0 +1,24 @@
+/*  
+    Copyright 2022 HolyCorn Software
+    The Donor Projects Project
+    Check the description of this widget at ./section.mjs
+*/
+
+
+.hc-donorforms-footer-section>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-family: k2dThin;
+}
+
+.hc-donorforms-footer-section>.container>.title {
+    font-size: 1.5em;
+    font-family: jua;
+}
+
+.hc-donorforms-footer-section>.container>.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}

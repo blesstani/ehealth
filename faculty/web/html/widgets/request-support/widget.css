@@ -1,0 +1,116 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet controls the request-support widget, where users can gain access to customer support
+*/
+
+.hc-ehealthi-request-support>.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    align-items: center;
+}
+
+.hc-ehealthi-request-support>.container>.main {
+    display: flex;
+    gap: 2em;
+    width: clamp(250px, 100vw - 8em, 1400px);
+    box-shadow: 0px 0px 1.5em rgb(179, 179, 179);
+    justify-content: space-between;
+    padding: clamp(1em, 3.5em, 3vw);
+    padding-bottom: 4.5em;
+    padding-top: 4.5em;
+    border-radius: 1em;
+    background-color: white;
+    flex-wrap: wrap-reverse;
+
+}
+
+.hc-ehealthi-request-support>.container>.main>* {
+    position: relative;
+    width: clamp(min(350px, 100vw - 2em), 48%, 650px);
+}
+
+
+.hc-ehealthi-request-support>.container>.main>.faqs>.hc-ealthi-frequently-asked-questions>.container {
+
+    --img-impose-width: 0px;
+    --img-impose-height: 0px;
+}
+
+.hc-ehealthi-request-support>.container>.main>.faqs>.hc-ealthi-frequently-asked-questions>.container>.main {
+    width: unset;
+    padding: 0px;
+    box-shadow: none;
+}
+
+.hc-ehealthi-request-support>.container>.main>.faqs>.hc-ealthi-frequently-asked-questions>.container>.main>.title {
+    font-size: 1.5em;
+}
+
+.hc-ehealthi-request-support>.container>.main>.faqs>.hc-ealthi-frequently-asked-questions>.container>.main::before {
+    display: none;
+}
+
+.hc-ehealthi-request-support>.container>.main>.form>.hc-ehealthi-contact-us {
+    padding-top: 7em;
+}
+
+.hc-ehealthi-request-support>.container>.main>.form>.hc-ehealthi-contact-us>.container {
+    padding: 0px;
+    background-color: transparent;
+    box-shadow: 0px 0px 0.5em lightgrey;
+    border-radius: 0.75em;
+}
+
+.hc-ehealthi-request-support>.container>.main>.form>.hc-ehealthi-contact-us>.container>.main>.image {
+    display: none;
+}
+
+.hc-ehealthi-request-support>.container>.main>.form>.hc-ehealthi-contact-us>.container>.main>.form>:is(.logo, .title) {
+    display: none;
+}
+
+.hc-ehealthi-request-support>.container>.main>.form>.hc-ehealthi-contact-us>.container>.main>.form {
+    padding: 0px;
+    background-color: transparent;
+    width: calc(100% - 3em);
+}
+
+.hc-ehealthi-request-support>.container>.main>.form>.hc-ehealthi-contact-us>.container>.main>.form>.action>.hc-ehealthi-filled-button {
+    width: calc(100% - 0.125em);
+}
+
+.hc-ehealthi-request-support>.container>.main>.form>.hc-ehealthi-contact-us>.container>.main>.form>.action>.hc-ehealthi-filled-button>.container {
+    border-radius: 0.35em;
+}
+
+.hc-ehealthi-request-support>.container>.main>.form>.hc-ehealthi-contact-us>.container>.main>.form :is(input, textarea) {
+    border-radius: 0.35em;
+}
+
+
+@media screen and (max-width:1050px) {
+    .hc-ehealthi-request-support>.container>.main {
+        justify-content: center;
+        width: clamp(250px, 100vw - 7em, 700px);
+    }
+
+    .hc-ehealthi-request-support>.container>.main>* {
+        width: clamp(min(450px, 100vw - 2em), 100%, 650px);
+    }
+
+    .hc-ehealthi-request-support>.container>.main>.form>.hc-ehealthi-contact-us {
+        padding: 0px;
+    }
+
+    .hc-ehealthi-request-support>.container>.main>.form>.hc-ehealthi-contact-us>.container {
+        box-shadow: none;
+    }
+
+    .hc-ehealthi-request-support>.container>.main>.form>.hc-ehealthi-contact-us>.container>.main>.form {
+        width: 100%;
+    }
+}

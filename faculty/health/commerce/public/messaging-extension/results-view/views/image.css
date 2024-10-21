@@ -1,0 +1,28 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet works on the view where a patient or doctor can view an image embedded in the lab results of a particular transaction.
+*/
+
+
+
+
+.hc-ehealthi-health-commerce-view-extension-results-view-image>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.hc-ehealthi-health-commerce-view-extension-results-view-image>.container>.title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.hc-ehealthi-health-commerce-view-extension-results-view-image>.container>.image {
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 16/9;
+    border-radius: 1em;
+}

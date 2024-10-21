@@ -1,0 +1,10 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet manages the view of the appointment admin widget
+*/
+
+.hc-ehealthi-health-appointment-admin-item-late {
+    color: rgb(204, 8, 8);
+    font-weight: bold;
+}

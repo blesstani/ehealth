@@ -1,0 +1,43 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet works on the view where a service provider adds an image to lab results of a transaction
+*/
+
+
+
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor-image-input>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor-image-input>.container>.title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor-image-input>.container>.image {
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 16/9;
+    border-radius: 1em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor-image-input>.container>.actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor-image-input>.container>.actions>*>.hc-action-button {
+    display: flex;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor-image-input>.container>.actions>*>.hc-action-button>.container {
+    background-color: var(--theme-color);
+    color: black;
+    border-radius: 0.75em;
+}

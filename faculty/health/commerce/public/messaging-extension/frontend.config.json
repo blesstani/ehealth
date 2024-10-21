@@ -1,0 +1,7 @@
+{
+    "run": {
+        "telep-chat-messaging-extensions": [
+            "./extension.mjs"
+        ]
+    }
+}

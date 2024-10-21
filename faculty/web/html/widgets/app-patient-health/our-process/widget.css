@@ -1,0 +1,75 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The holycornweb Project
+    The our-process widget
+    This stylesheet give beauty and life to the widget
+*/
+
+
+.hc-holycornweb-our-process>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5em;
+    font-size: clamp(0.8rem, 1.75rem, 5vw);
+}
+
+.hc-holycornweb-our-process>.container>.process-steps {
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1em;
+    padding-right: 0.5em;
+}
+
+.hc-holycornweb-our-process-step {
+    display: flex;
+}
+
+.hc-holycornweb-our-process-step.right {
+    justify-content: flex-end;
+}
+
+.hc-holycornweb-our-process-step>.container {
+    display: flex;
+    background-color: var(--color-secondary-light, white);
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.hc-holycornweb-our-process-step>.container>.main {
+    display: flex;
+    gap: 0.75em;
+}
+
+.hc-holycornweb-our-process-step>.container>.main>.icon {
+    width: auto;
+    height: 3em;
+}
+
+.hc-holycornweb-our-process-step>.container>.main>.icon>* {
+    width: unset;
+}
+
+
+.hc-holycornweb-our-process-step>.container>.main>.text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5ex;
+}
+
+.hc-holycornweb-our-process-step>.container>.main>.text>.label {
+    font-weight: 900;
+    color: var(--color-primary-dark);
+}
+
+.hc-holycornweb-our-process-step>.container>.main>.text>.description {
+    opacity: 0.7;
+    font-weight: 200;
+    font-size: 0.75em;
+}
+
+
+.hc-holycornweb-our-process-step-arrow.right-handed>.container {
+    transform: rotate(-20deg);
+}

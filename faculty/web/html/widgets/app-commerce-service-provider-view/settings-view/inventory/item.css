@@ -1,0 +1,50 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet works on the layout of a single item on the inventory, with respect to what a service provider sees
+*/
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-inventory-item>.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75em;
+    border-radius: 0.75em;
+    background-color: white;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-inventory-item>.container>.main {
+    display: inline-flex;
+    gap: 0.75em;
+    justify-content: space-between;
+}
+
+
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-inventory-item>.container>.main>.details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    position: relative;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-inventory-item>.container>.main>.details>.label {
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+/* 
+.hc-ehealthi-app-commerce-service-provider-view-settings-inventory-item>.container>.main>.details>.description {
+    flex-grow: 1;
+} */
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-inventory-item>.container>.main>:not(.details) {
+    max-width: 4.75em;
+}
+
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-inventory-item-action>.container {
+    display: flex;
+    flex-direction: column;
+    width: 2.5em;
+    height: 2.5em;
+}

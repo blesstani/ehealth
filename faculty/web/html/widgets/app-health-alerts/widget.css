@@ -1,0 +1,43 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet is meant for app-health-alerts widget, which displays the most relevant upcoming events, such as consultation, and payments.
+*/
+
+
+.hc-ehealthi-app-health-alerts>.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-app-health-alerts>.container>.items {
+    display: flex;
+    gap: 1em;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.hc-ehealthi-app-health-alerts>.container>.items:empty::before {
+    content: 'Nothing for now';
+    color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s 0.125s;
+    pointer-events: none;
+    opacity: 0;
+    font-size: 0px;
+    font-weight: 400;
+}
+
+.hc-ehealthi-app-health-alerts>.container>.items:empty {
+    padding-bottom: 2em;
+}
+
+.hc-ehealthi-app-health-alerts>.container>.items:empty::before {
+    font-size: 1em;
+    color: var(--healthi-blue);
+    opacity: 1;
+
+}

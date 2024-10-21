@@ -1,0 +1,15 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet, works on the app-user-notifications widget, where the user can view inApp notifications pertaining to him.
+*/
+
+
+.hc-ehealthi-app-user-notifications>.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-app-user-notifications>.container>.items {
+    font-size: 0.85em;
+}

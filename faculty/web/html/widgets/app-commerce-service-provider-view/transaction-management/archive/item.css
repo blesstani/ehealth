@@ -1,0 +1,68 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet works on a single item on the view where the service provider can manage older transactions.
+*/
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-archive-item>.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-archive-item>.container>.main {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-archive-item>.container>.main>.icon {
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-archive-item>.container>.main>.details {
+    width: clamp(min(250px, 100% - 5em), 100% - 6em, 350px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    background-color: white;
+    border-radius: 0.75em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-archive-item>.container>.main>.details>.label {
+    font-size: 1.45em;
+    font-weight: 600;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-archive-item>.container>.main>.details>.table {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-archive-item>.container>.main>.details>.table>* {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-archive-item>.container>.main>.details>.table>*>.label {
+    font-weight: 600;
+    font-size: 0.95em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-archive-item>.container>.main>.details>.transaction-id {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-archive-item>.container>.main>.details>.transaction-id>.content {
+    border-radius: 0.5em;
+    background-color: rgb(228, 235, 240);
+    padding: 0.25em;
+}

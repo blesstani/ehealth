@@ -1,0 +1,31 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    The Faculty of Health
+    This stylesheet is for the date-range-input, which (especially used in prescription-input widget) is used to provide the user a 
+    means of inputting a date date (From Dec 2023 to Jan 2024, for example).
+*/
+
+
+.hc-ehealthi-health-date-range-input>.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-health-date-range-input>.container>.components {
+    display: flex;
+    gap: 0.75em;
+    justify-content: space-between;
+}
+
+
+.hc-ehealthi-health-date-range-input-component>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.hc-ehealthi-health-date-range-input-component>.container>.label {
+    font-weight: bold;
+    font-size: 1.15em;
+}

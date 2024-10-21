@@ -1,0 +1,62 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet controls a special widget, that allows a user to view and edit text data from a single view
+*/
+
+
+.hc-ehealthi-app-inline-edit>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.hc-ehealthi-app-inline-edit>.container>.content {
+    pointer-events: none;
+    transition: 0.5s 0.125s;
+}
+
+.hc-ehealthi-app-inline-edit.editable>.container>.content {
+    pointer-events: all;
+    border: 0.125em solid currentColor;
+    padding: 0.75em;
+    border-radius: 0.5em;
+}
+
+
+.hc-ehealthi-app-inline-edit>.container>.actions {
+    display: flex;
+}
+
+.hc-ehealthi-app-inline-edit>.container>.actions>* {
+    transition: 0.5s;
+    padding-top: 0.75em;
+}
+
+.hc-ehealthi-app-inline-edit>.container>.actions>*:not(:first-child) {
+    padding-left: 0.75em;
+}
+
+.hc-ehealthi-app-inline-edit>.container>.actions>*>.hc-action-button>.container {
+    border-radius: 0.75em;
+    background-color: var(--accent-color);
+    font-weight: 600;
+    font-family: inherit;
+    min-width: 4.5em;
+    transition: none;
+}
+
+.hc-ehealthi-app-inline-edit.editable>.container>.actions>.edit {
+    font-size: 0em;
+    opacity: 0;
+}
+
+.hc-ehealthi-app-inline-edit:not(.editable)>.container>.actions>:not(.edit) {
+    font-size: 0em;
+    opacity: 0;
+}
+
+.hc-ehealthi-app-inline-edit:not(.dirty)>.container>.actions>.apply {
+    font-size: 0em;
+    opacity: 0;
+}

@@ -1,0 +1,10 @@
+{
+    "production": {
+        "database": "eHealthi",
+        "connection_uri": "mongodb+srv://eHealthi:ihUfpVVozyx1e3Ku@ehealthi.zrf7t43.mongodb.net/?retryWrites=true&w=majority"
+    },
+    "development": {
+        "database": "eHealthi",
+        "connection_uri": "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000"
+    }
+}

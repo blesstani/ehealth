@@ -1,0 +1,74 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet controls the view of the editor widget.
+    The editor widget allows a service provider to set / modify information about a transaction
+*/
+
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor>.container>.items {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor>.container>.items>.hc-widget {
+    transition: 0.75s 0.25s;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor>.container>.items>.hc-widget:not(.hc-widget-ready) {
+    font-size: 0em;
+    opacity: 0;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor>.container>.append {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor>.container>.append>.hc-action-button {
+    display: flex;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor>.container>.append>.hc-action-button>.container {
+    border-radius: 2em;
+}
+
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor-input-wrapper>.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor-input-wrapper>.container>.main {
+    display: flex;
+    gap: 1.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor-input-wrapper>.container>.main>.view {
+    width: 100%;
+    position: relative;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor-input-wrapper>.container>.main>.actions {
+    display: flex;
+    gap: 0.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor-input-wrapper>.container>.main>.actions>.action {
+    width: 2em;
+    height: 2em;
+    position: relative;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor-input-wrapper>.container>.main>.actions>.action>.container {
+    width: 100%;
+    height: 100%;
+
+}

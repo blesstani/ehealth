@@ -1,0 +1,31 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The Tele-Epilepsy Project
+    This stylesheet targets the new widget, which is responsible for allowing the user create a new contact.
+*/
+
+.hc-telep-manage-my-contacts-content>.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+.hc-telep-manage-my-contacts-input-contact>.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-telep-manage-my-contacts-input-contact>.container>.action>* {
+    width: 100%;
+}
+
+.hc-telep-manage-my-contacts-content-select-contact-type.hc-simple-file-explorer .hc-simple-file-explorer-item>.container>.main {
+    width: clamp(100px, 180px, 30vw);
+    max-width: unset;
+    min-width: unset;
+}
+
+.hc-telep-manage-my-contacts-content-select-contact-type.hc-simple-file-explorer .hc-simple-file-explorer-item>.container>.main>.label {
+    max-width: 8em;
+    font-size: 0.8em;
+}

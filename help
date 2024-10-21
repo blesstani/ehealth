@@ -1,0 +1,7 @@
+
+Don't directly use npm start. Use ./eHealthi.sh run prod or ./eHealthi.sh run dev to run in production, and development environments respectively. Doing so automatically fills in the environment variables before calling npm start.
+Just execute the ./eHealthi.sh command to find out more on what it can do. For example, issue SSL certificates (using certbot), configure a service for automatically starting your app in production
+You can edit the contents of dev.env and prod.env. They contain system configurations for development, and production environments.
+Modify also, the contents of config/database.json to specify details of the database connections.
+SSL configurations depend on config/platform.cer (certificate) and config/platform.key (private key), by default. These, can be changed in prod.env, and dev.env
+

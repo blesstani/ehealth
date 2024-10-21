@@ -1,0 +1,30 @@
+/* 
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet, is for the transaction-management, where service providers can manage the transactions that concern them.
+*/
+
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions>.container>.section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions>.container>.section>.title {
+    font-size: 1.5em;
+    font-weight: 900;
+    position: sticky;
+    padding: 0.5em;
+    padding-bottom: 0.35em;
+    top: 0.25em;
+    background-color: white;
+    z-index: 2;
+    border-radius: 0.75em;
+}

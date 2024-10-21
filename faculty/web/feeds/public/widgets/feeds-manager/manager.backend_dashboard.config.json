@@ -1,0 +1,17 @@
+{
+    "admin": [
+        {
+            "label": "Content",
+            "icon": "/$/shared/static/logo.png",
+            "name": "platform_content",
+            "supergroup": ""
+        },
+        {
+            "label": "Social Media",
+            "view": "./widget.mjs",
+            "name": "feeds_manager",
+            "icon": "/$/shared/static/logo.png",
+            "group": "platform_content"
+        }
+    ]
+}

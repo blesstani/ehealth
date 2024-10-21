@@ -1,0 +1,77 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    The Faculty of Health
+    This stylesheet is responsible for the layout of a single entry on the medical-records widget.
+*/
+
+
+.hc-ehealthi-health-medical-records-item>.container {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.75em;
+    padding: 0.75em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 0.15em rgb(147, 152, 156);
+    max-width: clamp(200px, 450px, 90%);
+}
+
+.hc-ehealthi-health-medical-records-item>.container>.time-info {
+    display: flex;
+    font-size: 0.75em;
+    padding-left: 3.5em;
+}
+
+.hc-ehealthi-health-medical-records-item>.container>.main {
+    display: flex;
+    gap: 0.75em;
+}
+
+.hc-ehealthi-health-medical-records-item>.container>.main>.icon {
+    width: 2em;
+    height: 2em;
+    position: relative;
+}
+
+.hc-ehealthi-health-medical-records-item>.container>.main>.details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.hc-ehealthi-health-medical-records-item>.container>.main>.details>.title {
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+.hc-ehealthi-health-medical-records-item>.container>.main>.details>.extra-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    font-size: 0.9em;
+}
+
+.hc-ehealthi-health-medical-records-item>.container>.main>.details>.extra-info>.doctor-profile>.hc-hcts-modernuser-inline-profile>.container>.main {
+    gap: 0.5em;
+}
+
+.hc-ehealthi-health-medical-records-item>.container>.main>.details>.extra-info>.doctor-profile>.hc-hcts-modernuser-inline-profile>.container>.main>.icon {
+    width: 2em;
+    height: 2em;
+}
+
+
+/** The view of medical records that are about lab tests */
+
+.hc-ehealthi-health-medical-records-item .hc-ehealthi-health-commerce-view-extension-results-view {
+    min-height: unset;
+}
+
+.hc-ehealthi-health-medical-records-item .hc-ehealthi-health-commerce-view-extension-results-view>.container>:is(.summary, .patient-info),
+.hc-ehealthi-health-medical-records-item .hc-ehealthi-health-commerce-view-extension-results-view>.container>.results>:is(.title, .add-to-history) {
+    display: none;
+}
+
+.hc-ehealthi-health-medical-records-item:has(.hc-ehealthi-health-commerce-view-extension-results-view)>.container>.main>.details>.title {
+    padding-left: 0.75em;
+}

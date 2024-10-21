@@ -1,0 +1,125 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet controls the parts of the app-my-profile widget, that deal with the user's login, and security.
+*/
+
+
+.hc-ehealthi-app-my-profile-security>.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-app-my-profile-security>.container>.logins {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 0.75em;
+}
+
+.hc-ehealthi-app-my-profile-security>.container>.logins>.content {
+    display: flex;
+    gap: 1.5em;
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 0.75em;
+    padding-left: 0.35em;
+}
+
+.hc-ehealthi-app-my-profile-security>.container>.logins>.btn-add {
+    width: 4em;
+    height: 4em;
+    box-shadow: 0px 0px 0.25em #62b1d8;
+    align-self: center;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hc-ehealthi-app-my-profile-security>.container>.logins>.btn-add::before {
+    content: '+';
+    font-size: 3.5em;
+    font-family: comfortaa;
+    font-weight: bolder;
+    color: var(--healthi-blue);
+}
+
+
+.hc-ehealthi-app-my-profile-security-item>.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.75em;
+    box-shadow: 0px 0px 0.25em lightgrey;
+    gap: 1.5em;
+    padding: 0.5em;
+    padding-bottom: 0px;
+    align-items: center;
+    min-width: 7em;
+    min-height: 7em;
+    justify-content: center;
+}
+
+.hc-ehealthi-app-my-profile-security-item>.container::before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    color: var(--theme-color);
+    background-image: url("./res/settings.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0.5em;
+    left: calc(100% - 1.5em);
+    transition: 0.25s 0.125s;
+}
+
+.hc-ehealthi-app-my-profile-security-item>.container>.icon {
+    position: relative;
+    width: 3.5em;
+    height: 3.5em;
+}
+
+.hc-ehealthi-app-my-profile-security-item>.container>.actions {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    color: var(--theme-color);
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s 0.125s;
+
+
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.hc-ehealthi-app-my-profile-security-item>.container>.actions::before {
+    content: '';
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.hc-ehealthi-app-my-profile-security-item:hover>.container>.actions {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.hc-ehealthi-app-my-profile-security-item:hover>.container::before {
+    opacity: 0;
+}
+
+.hc-ehealthi-app-my-profile-security-item-action>.container>.icon {
+    width: 2em;
+    height: 2em;
+    position: relative;
+}

@@ -1,0 +1,77 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet is for the app-patient-health widget, where it allows the user to enter the details of a new appointment
+*/
+
+.hc-ehealthi-app-patient-health-appointment-init>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    height: calc(var(--hc-ehealthi-device-frame-view-available-height) - 3.5em);
+    overflow: auto;
+}
+
+.hc-ehealthi-app-patient-health-appointment-init>.container>.btn-continue {
+    position: sticky;
+    top: calc(var(--hc-ehealthi-device-frame-view-available-height) - 7.5em);
+    height: 0px;
+    z-index: 1;
+}
+
+.hc-ehealthi-app-patient-health-appointment-init>.container>.btn-continue>.hc-action-button {
+    width: 100%;
+}
+
+.hc-ehealthi-app-patient-health-appointment-init>.container>.btn-continue>.hc-action-button>.container {
+    --color-primary: rgb(255, 0, 140);
+}
+
+
+.hc-ehealthi-app-patient-health-appointment-init>.container>.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    padding-bottom: 7em;
+}
+
+.hc-ehealthi-app-patient-health-appointment-init>.container>.sections>.section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.hc-ehealthi-app-patient-health-appointment-init>.container>.sections>.section>.title {
+    font-weight: bolder;
+    color: var(--healthi-blue);
+}
+
+.hc-ehealthi-app-patient-health-appointment-init>.container>.sections>.section.time>.hc-nice-number-input>.container {
+    background-color: rgb(230 235 235);
+    border: transparent;
+    gap: 0px;
+    max-width: 12em;
+    padding-top: 0.35em;
+    padding-bottom: 0.5em;
+    border-radius: 1em;
+}
+
+.hc-ehealthi-app-patient-health-appointment-init>.container>.sections>.section.time>.hc-nice-number-input>.container>input {
+    transform: translateX(-1em);
+    pointer-events: none;
+}
+
+.hc-ehealthi-app-patient-health-appointment-init>.container>.sections>.section.time>.hc-nice-number-input>.container::before {
+    content: ': 00';
+    font-family: archive;
+    font-size: 1.75em;
+    position: absolute;
+    left: 3.5em;
+    display: flex;
+    align-items: center;
+}
+
+.hc-ehealthi-app-patient-health-appointment-init>.container>.sections>.section.select-appointment-type {
+    display: flex;
+    flex-direction: column;
+}

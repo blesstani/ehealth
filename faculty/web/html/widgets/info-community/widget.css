@@ -1,0 +1,69 @@
+/*  
+    Copyright 2023 HolCorn Software
+    The eHealthi Project.
+    This stylesheet targets the info-community widget.
+*/
+
+.hc-ehealthi-info-community>.container {
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 3/2.25;
+    padding-top: 3em;
+    justify-content: center;
+    --width: clamp(300px, 100vw - 3em, 1200px);
+}
+
+.hc-ehealthi-info-community>.container>.content {
+    position: relative;
+    width: var(--width);
+    font-size: clamp(0.5em, 3.75em, 5.75vw);
+    align-self: center;
+    justify-self: center;
+    transform: translateY(-20%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-family: k2dThin;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5em;
+    gap: 1.5em;
+}
+
+.hc-ehealthi-info-community>.container>.content>.text>.caption {
+    font-size: 0.85em;
+}
+
+.hc-ehealthi-info-community>.container>.content>.text>.title {
+    display: inline-flex;
+    gap: 0.5ch;
+}
+
+.hc-ehealthi-info-community>.container>.content>.text>.title>highlight {
+    font-family: blinkerBold;
+}
+
+.hc-ehealthi-info-community>.container>.bg-doodle {
+    position: absolute;
+    width: var(--width);
+    aspect-ratio: 1/1;
+    background-image: url('./heart.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+
+.hc-ehealthi-info-community>.container>.content>.action>.hc-action-button>.container {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: var(--theme-color);
+    color: black;
+    font-family: jua;
+    border-radius: 0.5em;
+    font-size: clamp(0.65em, 1em, 4vw);
+}
+
+.hc-ehealthi-info-community>.container>.content>.action>.hc-action-button:hover>.container {
+    color: white;
+}

@@ -1,0 +1,131 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet is meant for the app-chat-view widget
+    
+*/
+
+
+.hc-ehealthi-app-chat-view>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    max-width: calc(100vw - 0.75em);
+    min-height: calc(var(--hc-ehealthi-device-frame-view-available-height, 100vh - 1em) - 2em);
+    padding: 0.5em;
+    background-color: var(--app-bg);
+}
+
+.hc-ehealthi-app-chat-view>.container>.top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    position: sticky;
+    top: 0;
+    padding-top: 1em;
+    background-color: inherit;
+    z-index: 2;
+    width: clamp(200px, 100vw - 0.75em, 100%);
+    animation: hc-ehealthi-app-chat-view-top-anim linear;
+    animation-timeline: scroll();
+}
+
+.hc-ehealthi-app-chat-view>.container>.top>.title {
+    font-size: clamp(1.35em, 2em, 4vw);
+    font-weight: bolder;
+}
+
+.hc-ehealthi-app-chat-view>.container>.top>.search {
+    width: 100%;
+    display: flex;
+    position: relative;
+    animation: hc-ehealthi-app-chat-view-top-search-anim linear;
+    animation-timeline: scroll();
+}
+
+.hc-ehealthi-app-chat-view>.container>.top>.search>input {
+    width: calc(100% - 0.5em);
+    padding: 0.25em;
+    border-radius: 0.5em;
+    outline: transparent;
+    border: 0px solid;
+    background-color: white;
+    min-height: 1.2em;
+    font-size: 1.5em;
+    font-family: inherit;
+}
+
+.hc-ehealthi-app-chat-view>.container>.top>.search::after {
+    content: '';
+    width: 2em;
+    height: 2em;
+    background-image: url('./search.svg');
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    top: 0.35em;
+    left: calc(100% - 2.5em);
+}
+
+
+.hc-ehealthi-app-chat-view>.container>.customer-service-float-action {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: calc(100% - 8em);
+    left: calc(100% - 2em - 2em - 1.5em);
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0.75em var(--theme-color);
+    padding: 0.75em;
+    color: var(--accent-color);
+    background-size: cover;
+    border: 0.0625em solid var(--theme-color);
+    z-index: 2;
+}
+
+
+.hc-ehealthi-app-chat-view>.container>.content {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1em, 2em, 4vw);
+}
+
+.hc-ehealthi-app-chat-view>.container>.content:empty::before {
+    content: "You don't have any chats yet." "\a Chats appear with people, after you book appointments with them. \a When you book an appointment, you would be assigned someone.\a\a Go to the Consult tab.";
+    white-space: pre-wrap;
+}
+
+
+@keyframes hc-ehealthi-app-chat-view-top-anim {
+
+    10% {
+        max-height: 3.5em;
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        max-height: 3.5em;
+        transform: translate(0px, 0px);
+    }
+}
+
+
+
+@keyframes hc-ehealthi-app-chat-view-top-search-anim {
+
+    5% {
+        max-width: 20em;
+        transform: translate(0px, 0px);
+    }
+
+    10% {
+        max-width: 5em;
+        transform: translate(8em, -3.65em);
+    }
+
+    100% {
+        max-width: 5em;
+        transform: translate(8em, -3.65em);
+    }
+}

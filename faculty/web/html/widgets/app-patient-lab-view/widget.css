@@ -1,0 +1,41 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    The app-patient-lab-view widget
+    This stylesheet works for the view that the patient uses to access laboratory functions
+*/
+
+
+.hc-ehealthi-app-patient-lab-view>.container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3.5em;
+}
+
+.hc-ehealthi-app-patient-lab-view>.container>.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+.hc-ehealthi-app-patient-lab-view>.container>.sections>.section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.hc-ehealthi-app-patient-lab-view>.container>.sections>.section>.header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: var(--app-bg);
+    z-index: 2;
+    position: sticky;
+    top: -0.5em;
+    padding: 0.75em;
+}
+
+.hc-ehealthi-app-patient-lab-view>.container>.sections>.section>.header>.title {
+    font-size: 1.5em;
+    font-weight: 600;
+}

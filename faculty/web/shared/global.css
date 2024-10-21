@@ -1,0 +1,61 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    DeInstantWay Project
+    This stylesheet contains globally needed style definitions for the platform
+*/
+
+
+:root {
+    --main-bg-color: rgb(28, 28, 42);
+    --theme-color: #18e8db;
+    --healthi-blue: #00A9FF;
+    --accent-color: var(--healthi-blue);
+
+
+    --app-bg: #f3f8fc;
+    background-color: var(--app-bg);
+
+}
+
+@font-face {
+    font-family: blinkerExtraBold;
+    src: url('./font/Blinker-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: blinkerBold;
+    src: url('./font/Blinker-Bold.ttf');
+}
+
+@font-face {
+    font-family: jua;
+    src: url('./font/Jua-Regular.ttf');
+}
+
+html>body {
+    font-family: comfortaa;
+}
+
+body .hc-matazm-travel-timetable-navigation>.container>.main>.nav>.year-select {
+    display: none !important;
+}
+
+body .hc-telep-chat-widget>.container {
+    color: black;
+}
+
+body .hc-telep-chat-widget>.container>.action-bar {
+    font-size: 1.1em;
+}
+
+body .hc-telep-chat-messaging-compose>.container>.main {
+    color: black;
+}
+
+body .hc-back-forth>.container>.nav>.title {
+    font-size: 1.35em;
+}
+
+body.appframe-mini .hc-back-forth.can-go-back>.container>.nav{
+    font-size:0em;
+}

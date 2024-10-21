@@ -1,0 +1,48 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project.
+    This stylesheet defines the layout of a single item on the info-team widget.
+*/
+
+.hc-ehealthi-info-team-item>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-family: k2dThin;
+    align-items: center;
+}
+
+.hc-ehealthi-info-team-item>.container>.icon {
+    width: 7em;
+    height: 7em;
+    position: relative;
+}
+
+.hc-ehealthi-info-team-item>.container>.icon::before {
+    content: '';
+    width: 45%;
+    height: 45%;
+    background-color: var(--theme-color);
+    position: absolute;
+    left: calc(100% - (45% / 2));
+    top: calc(45% / 4);
+    border-radius: 100%;
+}
+
+.hc-ehealthi-info-team-item>.container>.icon>* {
+    border-radius: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.hc-ehealthi-info-team-item>.container>.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.hc-ehealthi-info-team-item>.container>.text>.role-label {
+    font-family: blinkerExtraBold;
+    font-size: 0.75em;
+}

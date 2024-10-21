@@ -1,0 +1,25 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet targets the info-privacy widget, which informs the user about the business's privacy policy
+*/
+
+.hc-ehealthi-info-privacy>.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-info-privacy>.container>.main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-self: center;
+    padding: 2em;
+    position: relative;
+    max-width: clamp(100px, 60em, 100% - 4em);
+    font-size: 1.5em;
+}
+
+.hc-ehealthi-info-privacy>.container>.main>.content {
+    word-wrap: break-word;
+}

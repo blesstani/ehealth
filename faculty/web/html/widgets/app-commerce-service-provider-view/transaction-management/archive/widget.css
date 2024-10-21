@@ -1,0 +1,18 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet is meant for that view, where the service provider can view archive transactions.
+*/
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-archive>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-archive>.container>.items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 1em;
+}

@@ -1,0 +1,10 @@
+{
+    "admin": [
+        {
+            "label": "Inventory",
+            "group": "commerce",
+            "name": "inventory",
+            "view": "./widget.mjs"
+        }
+    ]
+}

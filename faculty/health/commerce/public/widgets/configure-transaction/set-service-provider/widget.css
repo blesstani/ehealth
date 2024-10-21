@@ -1,0 +1,109 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    The Faculty of Health
+    This stylesheet targets the view where users can configure the service provider designated to handle a transaction
+
+*/
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider>.container>.search {
+    z-index: 1;
+    position: sticky;
+    padding: 0.5em;
+    padding-top: 0.5em;
+    top: 2.5em;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider>.container>.search>input {
+    width: calc(100% - 1em);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    outline: transparent;
+    border: 0px solid;
+    background-color: white;
+    min-height: 1.2em;
+    font-size: 1.25em;
+    font-family: inherit;
+    box-shadow: 0px 0px 0.25em rgb(224, 233, 236);
+
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider>.container>.search::after {
+    content: '';
+    width: 2em;
+    height: 2em;
+    background-image: url('./search.svg');
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    top: 0.75em;
+    left: calc(100% - 2.5em);
+}
+
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider>.container>.items {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0.5em;
+    padding-bottom: 8.5em;
+    align-self: center;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider>.container>.items>* {
+    margin-top: 1.5em;
+}
+
+
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider>.container>.float {
+    display: flex;
+    position: sticky;
+    top: calc(var(--hc-ehealthi-device-frame-view-available-height, 100vh - 5em) - 9.5em);
+    justify-content: center;
+    width: calc(100% - 0.5em);
+    z-index: 1;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider>.container>:not(.float) {
+    transform: translateY(-3em);
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider>.container>.float>.hc-action-button {
+    width: calc(100% - 3em);
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider>.container>.float>.hc-action-button>.container {
+    border-radius: 1em;
+}
+
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider>.container>.items>.hc-ehealthi-app-commerce-service-provider-view-settings-inventory-item>.container {
+    box-shadow: 0px 0px 0.75em rgb(228, 228, 228);
+    transition: 0.5s 0.125s border;
+    border: 0.125em solid transparent;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider>.container>.items>.hc-ehealthi-app-commerce-service-provider-view-settings-inventory-item>.container>.main>.options {
+    display: none;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider>.container>.items>.hc-ehealthi-app-commerce-service-provider-view-settings-inventory-item.selected>.container {
+    box-shadow: 0px 0px 0em rgb(228, 228, 228);
+    border: 0.125em solid currentColor;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider>.container>.items>.hc-ehealthi-app-commerce-service-provider-view-settings-inventory-item {
+    transition: 0.5s 0.125s;
+}
+
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider>.container>.items>.hc-ehealthi-app-commerce-service-provider-view-settings-inventory-item.hidden-by-search {
+    opacity: 0;
+    font-size: 0;
+}

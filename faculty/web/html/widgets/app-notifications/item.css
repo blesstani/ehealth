@@ -1,0 +1,49 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet works on a single notification item on the app-user-notifications widget.
+*/
+
+
+.hc-ehealthi-app-user-notifications-item>.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+.hc-ehealthi-app-user-notifications-item>.container>.main {
+    display: flex;
+    gap: 1em;
+}
+
+.hc-ehealthi-app-user-notifications-item>.container>.main>.icon {
+    width: 10em;
+    height: 5em;
+    border-radius: 0.5em;
+}
+
+.hc-ehealthi-app-user-notifications-item>.container>.main>.content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    position: relative;
+    padding-bottom: 0.5em;
+}
+
+.hc-ehealthi-app-user-notifications-item>.container>.main>.content::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 0.125em;
+    background-color: #666060c2;
+    top: 100%;
+}
+
+.hc-ehealthi-app-user-notifications-item>.container>.main>.content>.title {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.hc-ehealthi-app-user-notifications-item>.container>.main>.content>.caption {
+    opacity: 0.8;
+}

@@ -1,0 +1,18 @@
+/* 
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet is responsible for the layout of the app-appointments/listings widget
+*/
+
+
+.hc-ehealthi-app-appointments-listings>.container>.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hc-ehealthi-app-appointments-listings>.container>.sections:empty::before {
+    content: 'No appointments, yet. \a\aGo ahead and schedule one.';
+    display: block;
+    white-space: pre;
+}

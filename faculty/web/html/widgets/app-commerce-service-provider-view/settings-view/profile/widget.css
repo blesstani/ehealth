@@ -1,0 +1,43 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet is meant for the view, where a service provider can edit his profile.
+*/
+
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-profile>.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-profile>.container>.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-profile>.container>.sections>.section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-profile>.container>.sections>.section>.header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-profile>.container>.sections>.section>.header>.title {
+    font-size: 1.35em;
+    font-weight: 600;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-profile>.container>.sections>.section>.header>:not(.title) {
+    font-size: 0.89em;
+}
+
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-profile>.container>.sections>.section>.content {
+    color: rgb(16, 72, 117);
+}

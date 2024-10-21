@@ -1,0 +1,10 @@
+{
+    "admin": [
+        {
+            "label": "Consultation Prices",
+            "group": "health_admin",
+            "name": "appointment_pricing_manager",
+            "view": "./widget.mjs"
+        }
+    ]
+}

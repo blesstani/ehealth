@@ -1,0 +1,148 @@
+/*  
+    Copyright 2022 HolyCorn Software
+    The Donor Forms Project
+    This is the footer widget
+*/
+
+.hc-donorforms-footer>.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    padding-top: 3.5em;
+    background-color: #3eebda;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: k2dThin;
+    font-size: clamp(0.75em, 3vw, 1.25em);
+}
+
+.hc-donorforms-footer>.container>.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+    gap: 2.5em;
+}
+
+.hc-donorforms-footer>.container>.main>.logo-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.hc-donorforms-footer>.container>.main>.logo-section>img {
+    width: 7em;
+}
+
+.hc-donorforms-footer>.container>.author-info {
+    text-align: center;
+    font-size: 0.95em;
+    padding-top: 2em;
+    padding-left: 10%;
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0.5ch;
+}
+
+
+.hc-donorforms-footer>.container>.author-info .action {
+    font-size: 0.95em;
+    font-weight: bolder;
+    display: inline-flex;
+    align-items: flex-end;
+    font-family: jua;
+}
+
+
+.hc-donorforms-footer>.container:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.09;
+
+}
+
+
+
+.hc-donorforms-footer>.container>.main>.data-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5em;
+
+    min-height: 100%;
+
+}
+
+.hc-donorforms-footer>.container>.main>.data-section>.data-section-main {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1em;
+    width: 100%;
+    max-width: 50em;
+}
+
+
+.hc-donorforms-footer a {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.25em;
+}
+
+
+.hc-donorforms-footer>.container>.community-button {
+    align-self: center;
+    width: calc(clamp(350px, 100vw - 7em - 6em - 3em, 38em));
+    padding-top: 1.5em;
+    padding-left: 7em;
+    position: relative;
+    align-self: center;
+}
+
+.hc-donorforms-footer>.container>.community-button>.hc-action-button {
+    width: 100%;
+}
+
+.hc-donorforms-footer>.container>.community-button>.hc-action-button>.container {
+    background-color: var(--theme-color);
+    color: var(--main-bg-color);
+    font-size: 1.5em;
+    font-family: jua;
+    width: 100%;
+    border-radius: 0.75em;
+}
+
+
+@media screen and (max-width:885px) {
+    .hc-donorforms-footer>.container>.main>.data-section>.data-section-main {
+        justify-content: space-between;
+        gap: 3.5em;
+    }
+
+    .hc-donorforms-footer>.container>.community-button {
+        width: calc(100vw - 5em);
+        padding-left: 0px;
+    }
+
+    .hc-donorforms-footer>.container>.author-info {
+        padding-left: 0px;
+    }
+}

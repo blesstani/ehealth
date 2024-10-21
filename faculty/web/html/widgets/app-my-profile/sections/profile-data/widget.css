@@ -1,0 +1,77 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet controls the profile-data section of the app-my-profile, which allows the user to view, and modify direct profile information, 
+    such as names, and photo
+*/
+
+.hc-ehealthi-app-my-profile-data>.container {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: clamp(150px, 85vw, min(600px, 100%));
+}
+
+
+
+
+.hc-ehealthi-app-my-profile-data>.container>.main {
+    display: flex;
+    gap: 0.5em;
+    justify-content: space-between;
+}
+
+.hc-ehealthi-app-my-profile-data>.container>.main>.profile-image {
+    --width: clamp(100px, 40vw, min(250px, 60%));
+    width: var(--width);
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.hc-ehealthi-app-my-profile-data>.container>.main>.profile-image>* {
+    border-radius: 1.5em;
+}
+
+
+.hc-ehealthi-app-my-profile-data>.container>.main>.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-content: space-between;
+}
+
+.hc-ehealthi-app-my-profile-data>.container>.main>.profile-details>.profile-label {
+    font-size: 1.25em;
+    font-weight: 900;
+    padding-bottom: 1em;
+}
+
+.hc-ehealthi-app-my-profile-data>.container>.main>.profile-details>.profile-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hc-ehealthi-app-my-profile-data>.container>.main>.profile-details>.profile-meta>*>.label {
+    font-weight: bolder;
+}
+
+.hc-ehealthi-app-my-profile-data>.container>.main>.profile-details>.profile-meta>*>.content {
+    font-size: 0.8em;
+}
+
+.hc-ehealthi-app-my-profile-data>.container>.action {
+    font-size: 1.25em;
+}
+
+.hc-ehealthi-app-my-profile-data>.container>.action>.hc-action-button {
+    width: 100%;
+}
+
+.hc-ehealthi-app-my-profile-data>.container>.action>.hc-action-button>.container {
+    background-color: var(--theme-color);
+    font-family: inherit;
+    color: inherit;
+    border-radius: 0.5em;
+    width: 100%;
+}

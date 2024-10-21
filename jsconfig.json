@@ -1,0 +1,77 @@
+{
+    "compilerOptions": {
+        "baseUrl": "",
+        "allowSyntheticDefaultImports": true,
+        "allowJs": true,
+        "allowImportingTsExtensions": true,
+        "esModuleInterop": true,
+        "paths": {
+            "/$/system/static/*": [
+                "system/public/*"
+            ],
+            "/$/backend_dashboard/static/*": [
+                "faculty/backend_dashboard/public/*"
+            ],
+            "/$/modernuser/static/*": [
+                "faculty/modernuser/public/*"
+            ],
+            "/$/modernuser/role/static/*": [
+                "faculty/modernuser/role/public/*"
+            ],
+            "/$/modernuser/static/authentication/lib/*": [
+                "faculty/modernuser/authentication/lib/*"
+            ],
+            "/$/modernuser/notification/static/*": [
+                "faculty/modernuser/notification/public/*"
+            ],
+            "/$/modernuser/onboarding/static/*": [
+                "faculty/modernuser/onboarding/public/*"
+            ],
+            "/$/modernuser/$plugins/*": [
+                "faculty/modernuser/_.plugins/*"
+            ],
+            "/$/shared/static/*": [
+                "faculty/web/shared/*"
+            ],
+            "/$/finance/static/*": [
+                "faculty/finance/public/*"
+            ],
+            "/$/finance/payment/static/*": [
+                "faculty/finance/payment/public/*"
+            ],
+            "/$/finance/product/static/*": [
+                "faculty/finance/product/public/*"
+            ],
+            "/$/chat/static/*": [
+                "faculty/chat/public/*"
+            ],
+            "/$/chat/messaging/static/*": [
+                "faculty/chat/messaging/public/*"
+            ],
+            "/$/chat/chat/static/*": [
+                "faculty/chat/chat/calling/*"
+            ],
+            "/$/health/static/*": [
+                "faculty/health/public/*"
+            ],
+            "/$/health/appointment/static/*": [
+                "faculty/health/appointment/public/*"
+            ],
+            "/$/health/commerce/static/*": [
+                "faculty/health/commerce/public/*"
+            ],
+            "/$/chat/calling/static/*": [
+                "faculty/chat/calling/public/*"
+            ],
+            "/$/web/html/*": [
+                "faculty/web/html/*"
+            ],
+            "/$/web/feeds/static/*": [
+                "faculty/web/feeds/public/*"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

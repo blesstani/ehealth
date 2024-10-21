@@ -1,0 +1,4 @@
+faculty/*/socket
+node_modules
+/data
+babel.config.json

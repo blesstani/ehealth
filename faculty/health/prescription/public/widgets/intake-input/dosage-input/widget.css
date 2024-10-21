@@ -1,0 +1,32 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    The Faculty of Health
+    This stylesheet controls the dosage-input widget of the intake-input widget, where the user gets to decide
+    the times when the prescription should be consumed.
+*/
+
+
+.hc-ehealthi-health-intake-input-dosage-input>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.hc-ehealthi-health-intake-input-dosage-input>.container>.dosages {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.hc-ehealthi-health-intake-input-dosage-input>.container>.add-dosage>.hc-action-button {
+    font-size: 0.85em;
+    width: 100%;
+}
+
+.hc-ehealthi-health-intake-input-dosage-input>.container>.add-dosage>.hc-action-button>.container {
+    background-color: rgb(209 219 219);
+    color: #000;
+    font-family: comfortaa;
+    border-radius: 0.75em;
+}

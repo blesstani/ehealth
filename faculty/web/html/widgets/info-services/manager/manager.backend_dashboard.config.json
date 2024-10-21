@@ -1,0 +1,17 @@
+{
+    "admin": [
+        {
+            "label": "Content",
+            "icon": "/$/shared/static/logo.png",
+            "name": "platform_content",
+            "supergroup": ""
+        },
+        {
+            "label": "Services",
+            "view": "./widget.mjs",
+            "name": "organization_services",
+            "icon": "/$/shared/static/logo.png",
+            "group": "platform_content"
+        }
+    ]
+}

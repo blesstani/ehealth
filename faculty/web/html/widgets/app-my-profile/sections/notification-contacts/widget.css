@@ -1,0 +1,80 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This widget, controls the view where the user modifies his notification contacts.
+*/
+
+
+.hc-ehealthi-app-my-profile-notification-contacts>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+
+.hc-ehealthi-app-my-profile-notification-contacts>.container>.items {
+    display: flex;
+    gap: 1em;
+    overflow: hidden;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.hc-ehealthi-app-my-profile-notification-contacts>.container>.bottom {
+    display: flex;
+    gap: 1em;
+}
+
+.hc-ehealthi-app-my-profile-notification-contacts>.container>.bottom>.btn-add-contact {
+    display: flex;
+    border-radius: 0.5em;
+    background-color: rgb(147, 220, 245);
+    width: 100%;
+    padding: 0.5em;
+    justify-content: center;
+}
+
+
+.hc-ehealthi-app-my-profile-notification-contacts-item>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    background-color: var(--healthi-blue, rgb(17, 159, 241));
+    color: white;
+    padding: 1.25em;
+    border-radius: 0.5em;
+}
+
+.hc-ehealthi-app-my-profile-notification-contacts-item>.container>.main {
+    display: flex;
+    gap: 1.5em;
+}
+
+.hc-ehealthi-app-my-profile-notification-contacts-item>.container>.main>.icon {
+    width: 4em;
+    height: 4em;
+    position: relative;
+}
+
+.hc-ehealthi-app-my-profile-notification-contacts-item>.container>.main>.details {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-weight: bolder;
+}
+
+.hc-ehealthi-app-my-profile-notification-contacts-item>.container>.main>.details>.provider-label {
+    font-size: 1.5em;
+}
+
+.hc-ehealthi-app-my-profile-notification-contacts-item>.container>.main>.details>.actions {
+    display: flex;
+    gap: 0.5em;
+    justify-content: space-between;
+}
+
+.hc-ehealthi-app-my-profile-notification-contacts-item>.container>.main>.details>.actions>.hc-action-button>.container {
+    min-width: 3em;
+    background-color: white;
+    color: var(--healthi-blue, rgb(17, 159, 241));
+}

@@ -1,0 +1,70 @@
+/* 
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet is meant for the role-input widget, which allows
+    new users to request for roles during signup
+ */
+
+.hc-ehealthi-inline-role-input>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-family: jua;
+    font-size: 1.25em;
+    color: var(--healthi-blue);
+}
+
+.hc-ehealthi-inline-role-input>.container>.trigger {
+    display: flex;
+    gap: 0.5em;
+    cursor: default;
+    transition: 0.35s 0.125s;
+    border: 1px solid currentColor;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+.hc-ehealthi-inline-role-input>.container>.trigger:hover {
+    filter: brightness(115%);
+}
+
+.hc-ehealthi-inline-role-input>.container>.content {
+    flex-direction: column;
+    gap: 1em;
+    font-family: k2dThin;
+    filter: brightness(70%);
+}
+
+.hc-ehealthi-inline-role-input>.container>.content>.roles {
+    display: flex;
+    gap: 0.75em;
+    flex-wrap: wrap;
+}
+
+
+/** The expand-contract animations */
+
+.hc-ehealthi-inline-role-input>.container>.content {
+    transition: 0.35s 0.125s;
+}
+
+.hc-ehealthi-inline-role-input>.container>.content {
+    max-height: 0px;
+    font-size: 0em;
+    display: flex;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.hc-ehealthi-inline-role-input.expanded>.container>.content {
+    font-size: 1em;
+    max-height: 100%;
+    position: relative;
+    transition: 0.25s 0.5s;
+    pointer-events: all;
+    opacity: 1;
+}
+
+.hc-ehealthi-inline-role-input .hc-uCheckbox {
+    color: var(--healthi-blue);
+}

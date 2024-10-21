@@ -1,0 +1,11 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The Tele-Epilepsy Project
+    This stylesheet acts on the edit widget, which allows a user to edit one of his contact.
+    This widget, is part of the manage-my-contacts-widget
+*/
+
+.hc-telep-manage-my-contacts-item-actions-edit-content>.container {
+    display: flex;
+    flex-direction: column;
+}

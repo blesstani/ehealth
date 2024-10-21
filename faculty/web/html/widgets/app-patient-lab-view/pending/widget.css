@@ -1,0 +1,19 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet is meant for the view, where patients can view and manage pending transactions with the laboratory
+*/
+
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions>.container>.items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 1em;
+}

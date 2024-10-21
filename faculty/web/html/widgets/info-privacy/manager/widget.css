@@ -1,0 +1,33 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet targets the set-community-link widget, which allows an authorized user to modify the community link.
+*/
+
+.hc-ehealthi-set-community-link>.container {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2em;
+    box-shadow: 0px 0px 0.25em lightblue;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+
+.hc-ehealthi-set-community-link>.container>.title {
+    font-size: 1.5em;
+}
+
+.hc-ehealthi-set-community-link>.container>.action {
+    width: 100%;
+    position: relative;
+}
+
+.hc-ehealthi-set-community-link>.container>.action>* {
+    width: 100%;
+}
+
+.hc-ehealthi-set-community-link>.container .hc-multi-flex-form textarea {
+    min-width: clamp(200px, 1200px, 100vw - 30em);
+    min-height: clamp(200px, 650px, 100vh - 5em);
+}

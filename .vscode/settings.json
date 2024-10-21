@@ -1,0 +1,32 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/faculty/*/faculty.json"
+            ],
+            "url": "/system/schema/faculty/schema.json"
+        },
+        {
+            "fileMatch": [
+                "@system/descriptor.json"
+            ],
+            "url": "/system/schema/faculty/plugin/descriptor.json"
+        },
+        {
+            "fileMatch": [
+                "*frontend.config.json"
+            ],
+            "url": "/system/schema/frontend-manager/schema.json"
+        },
+        {
+            "fileMatch": [
+                "*backend_dashboard.config.json"
+            ],
+            "url": "/system/schema/faculty/meta/backend_dashboard/schema.json"
+        }
+    ],
+    "files.exclude": {
+        "data": true,
+        "node_modules": true
+    }
+}

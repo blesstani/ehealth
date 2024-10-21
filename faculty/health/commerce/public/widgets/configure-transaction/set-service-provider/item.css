@@ -1,0 +1,117 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet is responsible the UI of a service provider when configuring the service provider for a transaction.
+*/
+
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item {
+    transition: 0.5s 0.125s;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item>.container {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0.75em;
+    border-radius: 0.75em;
+    background-color: white;
+    max-width: 350px;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item>.container>.main {
+    display: inline-flex;
+    gap: 0.75em;
+}
+
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item>.container>.main>.icon {
+    border-radius: 0.75em;
+    width: 3em;
+    height: 4em;
+}
+
+
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item>.container>.main>.details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    position: relative;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item>.container>.main>.details>.label {
+    font-weight: 900;
+    font-size: 1.25em;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item>.container>.main>.details>:not(.label) {
+    font-size: 0.85em;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item>.container>.main>.details>:is(.address, .description) {
+    display: inline-flex;
+    gap: 0.25em;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item>.container>.main>.details>:is(.address, .description)>.icon {
+    width: 1em;
+    height: 1em;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item>.container>.main>.details>* {
+    max-width: 100%;
+    position: relative;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item>.container>.main>.details>*,
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item>.container>.main>.details>*>* {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item>.container>.main>.details>*>* {
+    max-width: 100%;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item>.container>.main>.details>.incapable {
+    color: rgb(138, 10, 10);
+    font-size: 0.75em;
+    display: none;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item.incapable {
+
+    pointer-events: none;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item.incapable>.container>.main>.details>.incapable {
+    display: inline;
+}
+
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item.incapable>.container>.main>:not(.details),
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item.incapable>.container>.main>.details>:not(.incapable) {
+    filter: blur(0.125em);
+    opacity: 0.6;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item>.container>.main>.checkbox {
+    display: flex;
+    place-items: center;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item>.container>.main>.checkbox>.hc-uCheckbox {
+    color: var(--accent-color);
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item>.container>.main>.checkbox>.hc-uCheckbox::before {
+    border: 0.25em solid currentColor;
+    border-radius: 0.25em;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-set-service-provider-item.hidden-by-search {
+    opacity: 0;
+    font-size: 0em;
+}

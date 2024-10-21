@@ -1,0 +1,35 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet controls the app-my-profile widget, where a user can manage his profile, be it doctor, or patient
+*/
+
+
+.hc-ehealthi-app-my-profile>.container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3em;
+}
+
+.hc-ehealthi-app-my-profile>.container>.sections {
+    gap: 3.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-app-my-profile-section>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
+.hc-ehealthi-app-my-profile-section>.container>.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-app-my-profile-section>.container>.top>.title {
+    font-size: 1.75em;
+    font-weight: 900;
+}

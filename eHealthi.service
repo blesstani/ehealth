@@ -1,0 +1,15 @@
+
+[Unit]
+Description=eHealthi by HolyCorn Software
+StartLimitInterval=200
+StartLimitBurst=2
+
+[Service]
+User=root
+ExecStart=/usr/bin/eHealthi run prod
+Restart=always
+StartLimitIntervalSec=20
+StartLimitBurst=3
+
+[Install]
+WantedBy=multi-user.target

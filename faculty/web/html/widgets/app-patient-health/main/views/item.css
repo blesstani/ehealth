@@ -1,0 +1,71 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    The app-patient-health widget
+    This stylesheet (item), deals with the layout of a single item on the calendar view
+*/
+
+
+.hc-ehealthi-app-patient-health-main-view-item>.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    font-size: 0.85em;
+    background-color: var(--theme-color);
+    width: clamp(200px, 450px, 100vw - 7em);
+    border-radius: 1.25em;
+    min-height: 8.5em;
+    align-items: space-evenly;
+}
+
+.hc-ehealthi-app-patient-health-main-view-item>.container>.main {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.hc-ehealthi-app-patient-health-main-view-item>.container>.main>.left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    text-align: center;
+}
+
+.hc-ehealthi-app-patient-health-main-view-item>.container>.main>.left>.image {
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+}
+
+.hc-ehealthi-app-patient-health-main-view-item>.container>.main>.left>.time {
+    font-size: 1em;
+}
+
+.hc-ehealthi-app-patient-health-main-view-item>.container>.main>.right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    font-weight: 100;
+}
+
+.hc-ehealthi-app-patient-health-main-view-item>.container>.main>.right>.title {
+    font-size: 1.35em;
+    font-weight: 900;
+}
+
+.hc-ehealthi-app-patient-health-main-view-item>.container>.main>.right>.actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75em;
+    font-weight: 900;
+}
+
+.hc-ehealthi-app-patient-health-main-view-item>.container>.main>.right>.actions>.hc-action-button>.container {
+    background-color: white;
+    color: black;
+}
+
+.hc-ehealthi-app-patient-health-main-view-item>.container>.main>.right>.actions>:first-child:last-child {
+    flex-grow: 1;
+}

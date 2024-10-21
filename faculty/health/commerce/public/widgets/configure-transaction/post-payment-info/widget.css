@@ -1,0 +1,72 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet if for that view, that's presented to the patient, after he pays for a lab transaction
+*/
+
+
+
+.hc-ehealthi-health-commerce-configure-transaction-post-payment>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    min-height: calc(var(--hc-ehealthi-device-frame-view-available-height) - 3.5em);
+    justify-content: center;
+    --ideal-width: clamp(100px, 100% - 3em, 750px);
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-post-payment>.container>.title {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-post-payment>.container>.tick {
+    font-size: 7.5em;
+    width: 1em;
+    height: 1em;
+    background-color: var(--theme-color);
+    padding: 0.5em;
+    border-radius: 50%;
+    color: white;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-post-payment>.container>.tick>.hc-animated-tick>.container>svg>.stroke {
+    transition: 1.5s 0.125s;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-post-payment>.container>.text {
+    max-width: var(--ideal-width);
+    text-align: center;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-post-payment>.container>.continue {
+    width: var(--ideal-width);
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-post-payment>.container>.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    border-radius: 0.5em;
+    background-color: rgb(224, 232, 236);
+    width: calc(var(--ideal-width) - 2em);
+    align-items: flex-start;
+    padding: 0.7em;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-post-payment>.container>.info>.item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    align-self: flex-start;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-post-payment>.container>.info>.item>.content {
+    font-size: 1.35em;
+    font-weight: 600;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-post-payment>.container>.continue>.hc-action-button {
+    display: flex;
+}

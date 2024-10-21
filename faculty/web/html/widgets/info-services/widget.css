@@ -1,0 +1,151 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project.
+    This stylesheet is meant for the info-services widget.
+*/
+
+.hc-ehealthi-info-services>.container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding-top: 4em;
+}
+
+.hc-ehealthi-info-services>.container>.title {
+    font-size: 1.5em;
+    font-family: blinkerBold;
+}
+
+.hc-ehealthi-info-services>.container>.main>.hc-dual-pane-expander>.container {
+    background-color: transparent;
+
+    font-size: clamp(0.75em, 1.75em, 9vw);
+}
+
+.hc-ehealthi-info-services>.container>.main>.hc-dual-pane-expander>.container>.title {
+    font-family: blinkerBold;
+}
+
+.hc-ehealthi-info-services>.container>.main>.hc-dual-pane-expander>.container>.main {
+    background-color: #f8f8f8;
+    border-radius: 1em;
+    padding: 0px;
+    display: flex;
+    justify-content: stretch;
+    max-width: clamp(200px, 1300px, 100vw - 2em);
+    min-width: clamp(200px, var(--content-max-width, 500px), 100vw - 2em);
+}
+
+.hc-ehealthi-info-services>.container>.main>.hc-dual-pane-expander>.container>.main::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('./bg.jpg');
+    content: '';
+    z-index: 1;
+    filter: blur(1em);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.hc-ehealthi-info-services>.container>.main>.hc-dual-pane-expander>.container>.main>* {
+    flex-grow: 1;
+    min-width: 200px;
+}
+
+.hc-ehealthi-info-services>.container>.main>.hc-dual-pane-expander>.container>.main>.right {
+    background-color: #f0f0f0;
+    border-radius: inherit;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-bottom: 2em;
+}
+
+@media screen and (max-width:745px) {
+    .hc-ehealthi-info-services>.container>.main>.hc-dual-pane-expander>.container>.main>.right {
+        border-radius: inherit;
+    }
+
+    .hc-ehealthi-info-services>.container>.main>.hc-dual-pane-expander>.container>.main {
+        max-width: 350px;
+
+        flex-wrap: wrap;
+    }
+
+    .hc-ehealthi-info-services-action-label {
+        font-size: 0.85em;
+    }
+
+    .hc-ehealthi-info-services>.container>.main>.hc-dual-pane-expander>.container>.main>.left>.options {
+        gap: 0.75em;
+    }
+
+    .hc-ehealthi-info-services>.container>.main>.hc-dual-pane-expander>.container>.main>.right {
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+    }
+}
+
+
+.hc-ehealthi-info-services>.container>.main>.hc-dual-pane-expander>.container>.main>.right::before {
+    display: none;
+}
+
+.hc-ehealthi-info-services>.container>.main>.hc-dual-pane-expander>.container>.main>.left {
+    padding: 1em;
+}
+
+.hc-ehealthi-info-services>.container>.main .hc-dual-pane-expander-option:is(.selected, :hover)>.container {
+    box-shadow: none;
+}
+
+.hc-ehealthi-info-services>.container>.main .hc-dual-pane-expander-option>.container {
+    padding-bottom: 0.25em;
+    font-family: 1.25em;
+    font-family: k2dThin;
+}
+
+.hc-ehealthi-info-services>.container>.main .hc-dual-pane-expander-option>.container::after {
+
+    content: '';
+    width: calc(100% - 2em);
+    --height: 0.0625em;
+    height: var(--height);
+    background-color: currentColor;
+    position: absolute;
+    left: 0.75em;
+    top: calc(100% - (var(--height) / 2));
+
+}
+
+
+.hc-ehealthi-info-services>.container>.main .hc-dual-pane-expander-screen>.container>.title>*>img {
+    width: clamp(4em, 9em, 100vw - 5em);
+    height: 5em;
+    border-radius: 1.5em;
+    object-fit: cover;
+}
+
+.hc-ehealthi-info-services>.container>.main .hc-dual-pane-expander-screen>.container>.action>.hc-action-button>.container {
+    background-color: transparent;
+    color: black;
+    border-radius: 0px;
+}
+
+.hc-ehealthi-info-services>.container>.main .hc-dual-pane-expander-screen>.container>.content {
+    text-align: center;
+    font-size: 0.75em;
+    color: rgb(8, 47, 80);
+    max-width: clamp(250px, 500px, 50vw - 2em);
+}
+
+.hc-ehealthi-info-services-action-label {
+    display: flex;
+    gap: 1em;
+}

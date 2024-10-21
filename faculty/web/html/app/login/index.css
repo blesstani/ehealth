@@ -1,0 +1,36 @@
+/* 
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet determines the general UI aspects of the login page
+ */
+
+
+body {
+    position: relative;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+body>.login {
+    display: flex;
+    flex-direction: column;
+}
+
+body .hc-telep-phone-login-widget {
+    height: unset;
+}
+
+body .hc-telep-phone-login-widget>.container>.top {
+    display: none;
+}
+
+
+body .hc-telep-phone-login-widget>.container>.caption {
+    display: none;
+}
+
+body .hc-cayofedpeople-login>.container {
+    background-color: unset;
+    padding-top: unset;
+}

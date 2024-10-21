@@ -1,0 +1,7 @@
+{
+    "run": {
+        "telep-chat-messaging-profile-addons": [
+            "./profile-extension.mjs"
+        ]
+    }
+}

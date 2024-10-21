@@ -1,0 +1,48 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet controls the inventory section of the settings section of the app-commerce-service-provider-view widget.
+    In this section, service providers can manage their inventory.
+*/
+
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-inventory>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-inventory>.container>.actions {
+    display: flex;
+    gap: 1.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-inventory>.container>.actions>.hc-action-button>.container {
+    border-radius: 0.75em;
+    background-color: var(--accent-color);
+    color: #fff;
+    font-weight: 600;
+    font-family: inherit;
+    min-width: 4.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-inventory>.container>.actions>.hc-action-button>.container:hover {
+    min-width: 3.5em;
+    border-radius: 1.25em;
+}
+
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-inventory>.container>.listings {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-inventory>.container>.listings:empty::before {
+    content: 'You have no services in your inventory. Click the add button and choose from the list provided by us.';
+    font-size: 0.75em;
+    font-weight: 700;
+    background-color: rgb(231, 238, 241);
+    padding: 0.5em;
+    border-radius: 0.75em;
+}

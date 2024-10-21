@@ -1,0 +1,41 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet targets the app-patient-health widget, where it determines the looks of a single view that shows 
+    the user information about a prescription to be taken.
+*/
+
+.hc-ehealthi-app-patient-health-main-view-prescription-item.hc-ehealthi-app-patient-health-main-view-item>.container {
+    background-color: #43f0ff;
+}
+
+
+.hc-ehealthi-health-app-patient-health-prescription-detail-view>.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    font-family: comfortaa;
+    gap: 0.5em;
+    max-width: 300px;
+}
+
+.hc-ehealthi-health-app-patient-health-prescription-detail-view>.container>.prescription-label {
+    font-family: bariolBold;
+    font-size: 2em;
+}
+
+.hc-ehealthi-health-app-patient-health-prescription-detail-view>.container>.time-label {
+    display: flex;
+    gap: 1.2ex;
+}
+
+.hc-ehealthi-health-app-patient-health-prescription-detail-view>.container>.notes {
+    margin-top: 1em;
+    padding: 0.5em;
+    border-radius: 0.75em;
+    background-color: #43efff71;
+}
+
+.hc-ehealthi-health-app-patient-health-prescription-detail-view>.container>.notes:empty {
+    display: none;
+}

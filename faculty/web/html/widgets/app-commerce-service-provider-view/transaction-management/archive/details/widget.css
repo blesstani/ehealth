@@ -1,0 +1,65 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet works on the view, where a service provider can see the details of a transaction.
+*/
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(var(--hc-ehealthi-device-frame-view-available-height, 100vh - 8em) - 2em);
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-details>.container {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 3.5em;
+    padding: 1em;
+    transition: 0.75s 0.125s;
+    align-items: center;
+}
+
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-details>.container>.patient-info>.hc-hcts-modernuser-inline-profile>.container>.main {
+    flex-direction: column;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-details>.container>.patient-info>.hc-hcts-modernuser-inline-profile>.container>.main>.icon {
+    width: 7.5em;
+    height: 7.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-details>.container>.patient-info>.hc-hcts-modernuser-inline-profile>.container>.main>.label {
+    font-weight: 900;
+    font-size: 1.75em;
+
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-details>.container>.summary {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: relative;
+    min-width: calc(100% - 2.5em);
+    padding: 1.25em;
+    border-radius: 1.25em;
+    background-color: #eaeef1;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-details>.container>.summary>.commodities>.label {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-details>.container>.summary>:not(.commodities) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-details>.container>.summary>:not(.commodities)>.label {
+    font-weight: 700;
+}

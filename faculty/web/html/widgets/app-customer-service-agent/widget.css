@@ -1,0 +1,9 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet works on the app-customer-service-agent widget, where 
+*/
+
+.hc-ehealthi-app-customer-service-agent-view .hc-ehealthi-app-chat-view>.container>.customer-service-float-action {
+    display: none;
+}

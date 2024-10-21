@@ -1,0 +1,63 @@
+{
+    "name": "health",
+    "label": "Faculty of Health",
+    "init": "./exec.mjs",
+    "meta": {
+        "modernuser": {
+            "permissions": [
+                {
+                    "label": "View other's appointments",
+                    "name": "permissions.health.appointment.view",
+                    "inherits": [
+                        "permissions.modernuser.profiles.search"
+                    ]
+                },
+                {
+                    "label": "View, and modify other's appointments",
+                    "name": "permissions.health.appointment.supervise",
+                    "inherits": [
+                        "permissions.health.appointment.view"
+                    ]
+                },
+                {
+                    "name": "permissions.health.prescriptions.make",
+                    "label": "Prescribe drugs, and others",
+                    "inherits": [
+                        "permissions.modernuser.profiles.search"
+                    ]
+                },
+                {
+                    "name": "permissions.health.commerce.inventory.modify",
+                    "label": "Modify inventory"
+                },
+                {
+                    "name": "permissions.health.commerce.service_provider.manage",
+                    "label": "Manage service providers",
+                    "inherits": [
+                        "permissions.modernuser.profiles.search"
+                    ]
+                },
+                {
+                    "name": "permissions.health.commerce.transaction.create",
+                    "label": "Prescribe a lab test"
+                },
+                {
+                    "name": "permissions.health.commerce.transaction.supervise",
+                    "label": "Manage all Lab Test transactions",
+                    "inherits": [
+                        "permissions.health.commerce.transaction.create"
+                    ]
+                }
+            ]
+        }
+    },
+    "http": {
+        "staticPaths": {
+            "${fPath}/static/": "./public/",
+            "${fPath}/appointment/static/": "./appointment/public/",
+            "${fPath}/prescription/static/": "./prescription/public/",
+            "${fPath}/records/static/": "./records/public/",
+            "${fPath}/commerce/static/": "./commerce/public/"
+        }
+    }
+}

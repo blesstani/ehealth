@@ -1,0 +1,17 @@
+{
+    "admin": [
+        {
+            "label": "Customer Support",
+            "icon": "/$/shared/static/logo.png",
+            "name": "customer_support",
+            "supergroup": ""
+        },
+        {
+            "label": "Contacts",
+            "view": "./widget.mjs",
+            "name": "organization_support_contacts",
+            "icon": "/$/shared/static/logo.png",
+            "group": "customer_support"
+        }
+    ]
+}

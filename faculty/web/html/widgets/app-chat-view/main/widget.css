@@ -1,0 +1,14 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet controls the looks of the main component of the app-chat-view widget.
+*/
+
+.hc-ehealthi-app-chat-view-main .hc-telep-chat-messaging>.container>.messages {
+    max-height: calc(var(--hc-ehealthi-device-frame-view-available-height) - var(--compose-height) - 7em);
+}
+
+.hc-ehealthi-app-chat-view-main.hc-telep-chat-widget>.container {
+
+    max-height: calc(var(--hc-ehealthi-device-frame-view-available-height) - 1em - 0.5em);
+}

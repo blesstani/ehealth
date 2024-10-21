@@ -1,0 +1,26 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet works on the app-appointments widget, where users can manage upcoming appointments.
+*/
+
+
+.hc-ehealthi-app-appointments-view>.container {
+    min-height: calc(var(--hc-ehealthi-device-frame-view-available-height, calc(100vh - 8em)) - 7.5em);
+}
+
+.hc-ehealthi-app-appointments-view>.container>.listings {
+    padding-bottom: 4.75em;
+}
+
+
+.hc-ehealthi-app-appointments-view>.container>.action {
+    position: sticky;
+    top: calc(100% - 4.75em);
+    height: 0px;
+    z-index: 1;
+}
+
+.hc-ehealthi-app-appointments-view>.container>.action>* {
+    width: 100%;
+}

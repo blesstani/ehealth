@@ -1,0 +1,54 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    The Faculty of Health
+    This stylesheet is for the medical-records widget, which helps a doctor, or patient, access, or sel-access medical records
+*/
+
+
+.hc-ehealthi-health-medical-records>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-top: 3em;
+}
+
+.hc-ehealthi-health-medical-records>.container>.top {
+    display: flex;
+    padding: 0.5em;
+    flex-direction: column;
+}
+
+.hc-ehealthi-health-medical-records>.container>.top>.main {
+    display: flex;
+    gap: 2em;
+}
+
+.hc-ehealthi-health-medical-records>.container>.top>.main>.title {
+    font-size: 1.75em;
+}
+
+.hc-ehealthi-health-medical-records>.container>.top>.main>.actions {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.hc-ehealthi-health-medical-records>.container>.top>.main>.actions>* {
+    padding: 0.25em;
+    cursor: pointer;
+}
+
+.hc-ehealthi-health-medical-records>.container>.content:empty::before {
+    content: 'No medical records so far.';
+    color: rgb(25, 25, 85);
+    opacity: 0.8;
+}
+
+.hc-ehealthi-health-medical-records>.container>.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 0.25em;
+    padding-bottom: 2em;
+}

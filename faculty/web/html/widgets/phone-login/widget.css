@@ -1,0 +1,39 @@
+/* 
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet gives the phone-login widget it's additional looks
+ */
+
+
+.hc-telep-phone-login-widget.hc-ehealthi-phone-login {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    padding-top: 2em;
+    height: unset;
+
+}
+
+.hc-telep-phone-login-widget.hc-ehealthi-phone-login>.container {
+    flex-grow: unset;
+}
+
+
+.hc-telep-phone-login-widget.hc-ehealthi-phone-login>.container>.main>.action>.hc-action-button {
+    background-color: #000;
+    color: #fff;
+    border-radius: 1em;
+}
+
+
+.hc-telep-phone-login-widget.hc-ehealthi-phone-login>.container>.top {
+    justify-content: flex-start;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.hc-telep-phone-login-widget.hc-ehealthi-phone-login>.container>.main>.change-auth-action {
+    color: #2438EF;
+    font-weight: bolder;
+}

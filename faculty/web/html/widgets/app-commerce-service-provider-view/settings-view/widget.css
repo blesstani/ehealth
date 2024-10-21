@@ -1,0 +1,30 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This settings-view widget
+    This stylesheet gives the looks of the widget
+*/
+
+
+.hc-ehealthi-app-commerce-service-provider-view-settings>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5em;
+    padding-bottom: 3.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings>.container>.section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings>.container>.section>.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings>.container>.section>.top>.title {
+    font-size: 1.75em;
+    font-weight: 700;
+}

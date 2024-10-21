@@ -1,0 +1,17 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet works on the view where the service provider gets to add or edit a piece of text data to be attached to a transaction
+*/
+
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor-text-input>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing-editor-text-input>.container>.title {
+    font-size: 1.25em;
+    font-weight: 700;
+}

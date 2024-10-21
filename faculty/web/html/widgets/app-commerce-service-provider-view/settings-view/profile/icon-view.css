@@ -1,0 +1,35 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet works on the section where the service provider can view and modify his profile icon
+*/
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-profile-icon>.container {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-profile-icon>.container>.icon {
+    --icon-width: clamp(5em, 18em, 100vw - 4em);
+    width: var(--icon-width);
+    height: calc(var(--icon-width) * 0.7);
+    border-radius: 2em;
+    border: 0.125em solid rgb(110, 109, 109);
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-profile-icon>.container>.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-profile-icon>.container>.actions>*>.hc-action-button {
+    width: 100%;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-settings-profile-icon>.container>.actions>*>.hc-action-button>.container {
+    background-color: var(--accent-color);
+    border-radius: 0.75em;
+    font-family: inherit;
+}

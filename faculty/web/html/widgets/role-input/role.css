@@ -1,0 +1,41 @@
+/* 
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet is meant for the role widget of the role-input widget
+
+ */
+
+.hc-ehealthi-inline-role-input-item>.container {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    cursor: default;
+    transition: 0.5s 0.125s, 0s padding, 0s font-size, 0s gap, 0s border-radius;
+}
+
+.hc-ehealthi-inline-role-input-item:not(.selected)>.container {
+    box-shadow: 0px 0px 0.125em currentColor;
+}
+
+.hc-ehealthi-inline-role-input-item:not(.selected)>.container:hover {
+    box-shadow: 0px 0px 0.25em currentColor;
+}
+
+.hc-ehealthi-inline-role-input-item>.container>.image {
+    aspect-ratio: 1/1;
+    width: 2em;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.hc-ehealthi-inline-role-input-item.selected>.container {
+    border: 1px solid currentColor;
+}
+
+.hc-ehealthi-inline-role-input-item>.container>.tick {
+    color: currentColor;
+}

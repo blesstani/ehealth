@@ -1,0 +1,9 @@
+{
+    "admin": [
+        {
+            "label": "Health Management",
+            "name": "health_admin",
+            "icon": "./health-admin.png"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "name": "web",
+    "label": "Web",
+    "init": "./exec.mjs",
+    "http": {
+        "staticPaths": {
+            "/$/shared/static/": "./shared/",
+            "/$/web/html/": "./html",
+            "/": "./html",
+            "${fPath}/feeds/static/": "./feeds/public/"
+        }
+    },
+    "meta": {
+        "settings": {
+            "widgets": {
+                "public": true,
+                "label": "Widgets public settings"
+            }
+        },
+        "modernuser": {
+            "permissions": [
+                {
+                    "name": "permissions.web.customerService.manage",
+                    "label": "Oversee Customer Service",
+                    "inherits": [
+                        "permissions.modernuser.profiles.search"
+                    ]
+                }
+            ]
+        }
+    }
+}

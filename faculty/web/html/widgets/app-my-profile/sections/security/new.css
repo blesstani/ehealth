@@ -1,0 +1,15 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet controls the user where the user gets to create a new login for his account.
+*/
+
+.hc-ehealthi-app-my-profile-security-new-login-container {
+    width: 100%;
+    position: relative;
+}
+
+.hc-ehealthi-app-my-profile-security-new-login .hc-simple-file-explorer-item>.container>.main {
+    min-width: 100px;
+
+}

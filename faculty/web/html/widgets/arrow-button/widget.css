@@ -1,0 +1,60 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet works on the arrow-button widget
+*/
+
+.hc-ehealthi-arrow-button.hc-action-button {
+    --color-primary: var(--healthi-blue);
+    --color-secondary: white;
+}
+
+.hc-ehealthi-arrow-button.hc-action-button>.container {
+    --arrow-font-size: 1.5em;
+    padding: 0.75em;
+    padding-right: calc(var(--arrow-font-size) * 1.6);
+    padding-left: calc(var(--arrow-font-size) * 0.5);
+    font-family: comfortaa;
+    font-size: clamp(1em, 1.5em, 6.75vw);
+    border-radius: 0.75em;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+
+.hc-ehealthi-arrow-button>.container>.arrow {
+    font-size: var(--arrow-font-size);
+    display: flex;
+    position: absolute;
+    left: calc(100% - 1.35em);
+    top: calc(50% - 0.75em);
+    color: var(--color-primary);
+    font-family: roboto;
+    z-index: 1;
+    transition: 0.25s 0.125s;
+}
+
+.hc-ehealthi-arrow-button>.container>.arrow::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-secondary);
+    border-radius: 100%;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    top: 0px;
+    left: 0px;
+    opacity: 0.75;
+    top: 0.25em;
+    z-index: -1;
+    transition: 0.25s 0.125s;
+}
+
+.hc-ehealthi-arrow-button:hover>.container>.arrow::after {
+    opacity: 0;
+}
+
+.hc-ehealthi-arrow-button:hover>.container>.arrow {
+    color: var(--color-secondary);
+}

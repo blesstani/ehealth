@@ -1,0 +1,85 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet controls the servicing section of the app-commerce-service-provider-view/transaction-management widget.
+    This view is where a service provider can add information about a transaction.
+    In real life, this could be photo of an x-ray scan.
+*/
+
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding-bottom: 3em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing>.container>.header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    position: sticky;
+    padding: 0.75em;
+    top: -0.5em;
+    background-color: var(--app-bg);
+    z-index: 2;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing>.container>.header>.title {
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing>.container>.header>.caption {
+    opacity: 0.9;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing>.container>.editor {
+    margin-left: 2.5em;
+    transition: 0.5s 0.125s;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing>.container>.editor:has(.hc-widget >.container >.items:empty) {
+    margin-left: 0em;
+}
+
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing>.container>.save {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing>.container>.save>.hc-action-button {
+    display: flex;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing>.container>.save>.hc-action-button>.container {
+    border-radius: 0.75em;
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 900;
+}
+
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing>.container>.mark-done {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-top: 3em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing>.container>.mark-done>.text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing>.container>.mark-done>.text>.title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view-transactions-pending-servicing>.container>.mark-done>.action>.hc-action-button {
+    display: flex;
+}

@@ -1,0 +1,55 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    The Faculty of Health
+    The configure-transaction widget
+    This stylesheet controls the view, where the user can pay for a lab transaction
+*/
+
+.hc-ehealthi-health-commerce-configure-transaction-make-payment {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.hc-ehealthi-health-commerce-configure-transaction-make-payment>.container {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    padding: 1em;
+    border-radius: 1.5em;
+    background-color: #f0f2f7;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-make-payment>.container>.title {
+    font-size: 1.75em;
+    font-weight: 900;
+    font-family: bariolBold;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-make-payment>.container>.caption {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1ex;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-make-payment>.container>.caption>* {
+    display: inline;
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-make-payment>.container>.caption>.amount {
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.hc-ehealthi-health-commerce-configure-transaction-make-payment>.container>.payment-main {
+    margin-block-start: 1em;
+    background-color: #eaedf3;
+    width: calc(100% - 4.5em);
+    padding: 1em;
+    margin-block: 1em;
+    border-radius: inherit;
+}

@@ -1,0 +1,10 @@
+{
+    "admin": [
+        {
+            "supergroup": "health_admin",
+            "label": "Labs",
+            "name": "commerce",
+            "icon": "./labs.svg"
+        }
+    ]
+}

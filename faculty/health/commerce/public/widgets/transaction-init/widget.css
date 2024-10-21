@@ -1,0 +1,154 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    The transaction-init widget
+    This widget allows a doctor to start a transaction to be eventually completed by the patient and service provider
+*/
+
+
+.hc-ehealthi-health-commerce-transaction-init>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.top {
+    position: sticky;
+    top: -1.5em;
+    padding: 0.5em;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.top>.search {
+    z-index: 1;
+    position: sticky;
+    padding: 0.5em;
+    padding-top: 0.5em;
+    top: -0.45em;
+}
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.top>.search>input {
+    width: calc(100% - 1em);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    outline: transparent;
+    border: 0px solid;
+    background-color: white;
+    min-height: 1.2em;
+    font-size: 1.25em;
+    font-family: inherit;
+    box-shadow: 0px 0px 0.25em rgb(224, 233, 236);
+
+}
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.top>.search::after {
+    content: '';
+    width: 2em;
+    height: 2em;
+    background-image: url('./search.svg');
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    top: 0.75em;
+    left: calc(100% - 2.5em);
+}
+
+
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.values {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25em;
+    border-radius: 0.75em;
+    background-color: rgb(230 239 239);
+    transition: 0.5s;
+    gap: 1em;
+}
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.values:has(.listings:empty) {
+    opacity: 0;
+    font-size: 0em;
+}
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.values:has(.listings:not(:empty))::before {
+    content: 'The tests you have selected:';
+    padding-bottom: 1em;
+}
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.values>.listings>*:not(:first-child) {
+    margin-top: 1.5em;
+}
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.values>.listings>* {
+    font-size: 0em;
+}
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.values>.listings>*.hc-widget-ready {
+    font-size: 1em;
+    transition: 0.5s 0.125s;
+}
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.values>.listings>*.hc-widget-ready.destroyed {
+    font-size: 0em;
+    transform: none;
+}
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.values>.total {
+    display: flex;
+    gap: 0.125ex;
+}
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.values>.total>.value {
+    font-weight: bolder;
+}
+
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.select {
+    position: relative;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.select>.listings {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.select>.listings>* {
+    margin-top: 1em;
+    transition: 0.5s 0.125s;
+}
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>:is(.select, .values)>.listings>*>.container>.main>.options {
+    display: none;
+}
+
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.commodities-input>.select>.listings>*.hidden-by-select {
+    opacity: 0;
+    font-size: 0em;
+}
+
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.confirm {
+    position: absolute;
+    top: calc(var(--hc-ehealthi-device-frame-view-available-height, 100vh - 4em) - 12em);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hc-ehealthi-health-commerce-transaction-init>.container>.confirm>* {
+    width: 100%;
+}

@@ -1,0 +1,122 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet controls the app-patient-health widget, where the patient manages aspects directly related to his health
+*/
+
+
+
+.hc-ehealthi-app-patient-health>.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: var(--hc-ehealthi-device-frame-view-available-height);
+    overflow: auto;
+}
+
+
+
+.hc-ehealthi-app-patient-health>.container>.section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.hc-ehealthi-app-patient-health>.container>.section>.title {
+    font-size: 1.75em;
+    font-weight: bolder;
+    padding: 0.5em;
+    padding-left: 0.125em;
+    background-color: var(--app-bg);
+    z-index: 2;
+    position: sticky;
+    top: -0.125em;
+}
+
+
+.hc-ehealthi-app-patient-health>.container>.hold-profile {
+    position: sticky;
+    top: 1em;
+    left: calc(100% - 3em);
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.hc-ehealthi-app-patient-health>.container>.hold-profile>.welcome {
+    align-self: flex-start;
+    min-width: clamp(5em, 80% - 2em, 28ex);
+    display: flex;
+    gap: 0.75ex;
+    font-size: 1.75em;
+    transition: 0.5s 0.125s;
+}
+
+.hc-ehealthi-app-patient-health:is(.welcome-hidden, :not(.hc-widget-ready))>.container>.hold-profile>.welcome {
+    opacity: 0;
+}
+
+
+
+
+.hc-ehealthi-app-patient-health>.container>.hold-profile>.main {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.25em;
+    width: 3.5em;
+    position: relative;
+    align-items: center;
+    font-weight: 900;
+    background-color: white;
+    border-radius: 1.5em;
+    --main-padding: 0.5em;
+    padding: var(--main-padding);
+}
+
+.hc-ehealthi-app-patient-health>.container>.hold-profile>.main>.icon {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: inherit;
+    position: relative;
+    background-size: cover;
+}
+
+.hc-ehealthi-app-patient-health>.container>.hold-profile>.main>.icon::after,
+.hc-ehealthi-app-patient-health>.container>.hold-profile>.main>.icon::before {
+    content: '';
+    position: absolute;
+    width: calc((var(--main-padding) / 1) + 100%);
+    height: calc((var(--main-padding) / 1) + 100%);
+    top: calc(var(--main-padding) / -2);
+    left: calc(var(--main-padding) / -2);
+    border-radius: inherit;
+}
+
+
+.hc-ehealthi-app-patient-health>.container>.hold-profile>.main>.icon::after {
+    background-color: rgba(65, 71, 73, 0.2);
+}
+
+.hc-ehealthi-app-patient-health>.container>:not(.hold-profile, .btn-init-appointment) {
+    padding-top: 2em;
+}
+
+
+.hc-ehealthi-app-patient-health>.container>.main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 7em;
+    padding-left: 0.25em;
+    padding-top: 5em;
+}
+
+.hc-ehealthi-app-patient-health>.container>.notifications>.more {
+    display: flex;
+    justify-content: center;
+}
+
+.hc-ehealthi-app-patient-health>.container>.notifications>.more>.hc-action-button {
+    font-size: 0.85em;
+}

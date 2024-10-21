@@ -1,0 +1,55 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet works on the app-commerce-service-provider-view widget, which is responsible for the interface for the features that a service provider has
+*/
+
+
+.hc-ehealthi-app-commerce-service-provider-view>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view>.container>.top {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: -0.25em;
+    padding: 1em;
+    border-radius: 0.75em;
+    z-index: 3;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view>.container>.top>.settings {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    font-weight: bolder;
+    align-self: flex-end;
+    background-color: #fff;
+    padding: 0.25em;
+    border-radius: 0.5em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view>.container>.top>.settings>.icon {
+    width: 2em;
+    height: 2em;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view>.container>.top>.settings>.label {
+    transition: 0.25s 0.125s;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view>.container>.top>.settings.mini {
+    padding: 0px;
+    font-size: 0.85em;
+    transition: 0.25s 0.125s;
+}
+
+.hc-ehealthi-app-commerce-service-provider-view>.container>.top>.settings.mini>.label {
+    font-size: 0em;
+    opacity: 0;
+
+}

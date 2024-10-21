@@ -1,0 +1,69 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet controls the view where the user gets to pay for an appointment.
+*/
+
+
+.hc-ehealthi-app-patient-health-appointment-payment-view>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hc-ehealthi-app-patient-health-appointment-payment-view>.container>.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-app-patient-health-appointment-payment-view>.container>.top>.image {
+    aspect-ratio: 16/9;
+    width: clamp(100px, 100%, min(100vw - 2em, 600px));
+    background-image: url('./consultation.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.75em;
+}
+
+.hc-ehealthi-app-patient-health-appointment-payment-view>.container>.top>.caption {
+    font-size: clamp(0.5em, 0.95em, 3.9vw);
+    font-weight: lighter;
+}
+
+
+.hc-ehealthi-app-patient-health-appointment-payment-view>.container>.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75em;
+}
+
+.hc-ehealthi-app-patient-health-appointment-payment-view>.container>.main>.title {
+    font-size: clamp(1em, 1.5em, 5.5vw);
+    color: var(--healthi-blue);
+    font-weight: bolder;
+}
+
+.hc-ehealthi-app-patient-health-appointment-payment-view>.container>.main>.info {
+    text-align: center;
+    font-size: clamp(0.75em, 0.95em, 3.5vw);
+}
+
+.hc-ehealthi-app-patient-health-appointment-payment-view>.container>.main>.info>* {
+    display: inline;
+}
+
+.hc-ehealthi-app-patient-health-appointment-payment-view>.container>.main>.info>.amount {
+    color: var(--healthi-blue);
+}
+
+.hc-ehealthi-app-patient-health-appointment-payment-view>.container>.main>.payment {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    background-color: #f7fafb;
+    border-radius: 1.5em;
+    width: calc(100% - 1em);
+}

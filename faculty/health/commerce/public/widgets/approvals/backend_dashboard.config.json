@@ -1,0 +1,10 @@
+{
+    "admin": [
+        {
+            "label": "Service Providers",
+            "group": "commerce",
+            "name": "service_providers",
+            "view": "./widget.mjs"
+        }
+    ]
+}

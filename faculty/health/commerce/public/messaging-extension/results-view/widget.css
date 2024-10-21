@@ -1,0 +1,100 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet works on the view, where a doctor views the results of a lab test
+*/
+
+.hc-ehealthi-health-commerce-view-extension-results-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(var(--hc-ehealthi-device-frame-view-available-height, 100vh - 8em) - 2em);
+}
+
+.hc-ehealthi-health-commerce-view-extension-results-view>.container {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 3.5em;
+    padding: 1em;
+    padding-bottom: 2em;
+    transition: 0.75s 0.125s;
+    align-items: center;
+}
+
+
+.hc-ehealthi-health-commerce-view-extension-results-view>.container>.patient-info>.hc-hcts-modernuser-inline-profile>.container>.main {
+    flex-direction: column;
+}
+
+.hc-ehealthi-health-commerce-view-extension-results-view>.container>.patient-info>.hc-hcts-modernuser-inline-profile>.container>.main>.icon {
+    width: 7.5em;
+    height: 7.5em;
+}
+
+.hc-ehealthi-health-commerce-view-extension-results-view>.container>.patient-info>.hc-hcts-modernuser-inline-profile>.container>.main>.label {
+    font-weight: 900;
+    font-size: 1.75em;
+
+}
+
+.hc-ehealthi-health-commerce-view-extension-results-view>.container>.summary {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: relative;
+    min-width: calc(100% - 2.5em);
+    padding: 1.25em;
+    border-radius: 1.25em;
+    background-color: #eaeef1;
+}
+
+.hc-ehealthi-health-commerce-view-extension-results-view>.container>.summary>.commodities>.label {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+
+.hc-ehealthi-health-commerce-view-extension-results-view>.container>.summary>:not(.commodities) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.hc-ehealthi-health-commerce-view-extension-results-view>.container>.summary>:not(.commodities)>.label {
+    font-weight: 700;
+}
+
+
+.hc-ehealthi-health-commerce-view-extension-results-view>.container>.results {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.hc-ehealthi-health-commerce-view-extension-results-view>.container>.results>.title {
+    font-size: 1.75em;
+    font-weight: 900;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    position: sticky;
+    top: -0.5em;
+    z-index: 2;
+    background-color: var(--app-bg);
+}
+
+.hc-ehealthi-health-commerce-view-extension-results-view>.container>.results>.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.hc-ehealthi-health-commerce-view-extension-results-view>.container>.results>.add-to-history>.hc-action-button {
+    display: flex;
+}
+
+.hc-ehealthi-health-commerce-view-extension-results-view>.container>.results>.add-to-history>.hc-action-button>.container {
+    background-color: var(--accent-color);
+    font-size: 1.25em;
+    border-radius: 1em;
+}

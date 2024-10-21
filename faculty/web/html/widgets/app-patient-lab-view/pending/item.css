@@ -1,0 +1,185 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet works on the layout of a single transaction in the user's view of pending laboratory transactions.
+*/
+
+
+
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container {
+    display: inline-flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 0.65em #c0cdd9;
+    padding: 0.75em;
+    border-radius: 0.75em;
+    background-color: white;
+    width: clamp(250px, 650px, 100% - 1.5em);
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    --icon-width: clamp(4em, 9em, 25vw);
+}
+
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.icon {
+    width: var(--icon-width);
+    height: calc(var(--icon-width) * 1.7);
+    min-height: var(--min-height);
+    border-radius: 1em;
+    box-shadow: 0px 0px 0.5em lightgrey;
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    max-width: calc(100% - var(--icon-width) - 1em);
+    position: relative;
+    --data-color: #078fd3;
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.label {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.label,
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.summary>:is(.commodities, .doctor-info),
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.transaction-id,
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.transaction-id>.content {
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.transaction-id {
+    display: inline-block;
+    position: relative;
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.transaction-id>* {
+    display: inline;
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.transaction-id>.content {
+    max-width: calc(100% - 5ex - 0.5em);
+    padding: 0.35em;
+    border-radius: 0.75em;
+    background-color: rgb(223, 234, 241);
+    display: inline-flex;
+    font-size: 0.85em;
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details data {
+    color: var(--data-color);
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.summary {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.summary>.doctor-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75em;
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.summary>.doctor-info>.content {
+    padding: 0.5em;
+    border-radius: 1em;
+    background-color: #f5f5f5;
+    max-width: calc(100% - 10ex);
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.summary>.doctor-info>.content>.hc-hcts-modernuser-inline-profile>.container>.main {
+    gap: 0.5em;
+    color: var(--data-color);
+    flex-direction: row-reverse;
+    max-width: calc(100% - 1em);
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.summary>.doctor-info>.content>.hc-hcts-modernuser-inline-profile>.container>.main>.icon {
+    width: 2em;
+    height: 2em;
+}
+
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.summary>.doctor-info>.content>.hc-hcts-modernuser-inline-profile>.container>.main>.label {
+    max-width: calc(100% - 2.5em);
+}
+
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.actions {
+    display: flex;
+    padding-top: 0.75em;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.actions>* {
+    display: flex;
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.actions>*>.container {
+    border-radius: 0.75em;
+}
+
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item.paid>.container>.main>.details>.summary>.amount {
+    display: inline-flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.summary>.amount>.status-icon {
+    width: 1em;
+    height: 1em;
+    padding: 0.25em;
+    border-radius: 100%;
+    border: 0.125em solid currentColor;
+    color: green;
+    font-size: 0em;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.hc-ehealthi-app-patient-lab-view-pending-transactions-item.paid>.container>.main>.details>.summary>.amount>.status-icon {
+    font-size: 0.75em;
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container {
+        font-size: clamp(0.5em, 1em, 3.5vw);
+    }
+
+    .hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.transaction-id {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.transaction-id>.content {
+        max-width: calc(100% - 1em);
+    }
+
+    .hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.summary>* {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hc-ehealthi-app-patient-lab-view-pending-transactions-item>.container>.main>.details>.summary>.doctor-info {
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "ehealthi",
+  "version": "1.0.0",
+  "description": "The eHealthi platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --experimental-json-modules --trace-warnings start.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HolyCorn-Software/eHealthi.git"
+  },
+  "keywords": [
+    "eHealthi",
+    "HolyCorn",
+    "Software",
+    "medical",
+    "app",
+    "Platine"
+  ],
+  "author": "https://github.com/HolyCorn-Software",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HolyCorn-Software/eHealthi/issues"
+  },
+  "homepage": "https://github.com/HolyCorn-Software/eHealthi#readme",
+  "type": "module",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.427.0",
+    "@babel/plugin-transform-runtime": "^7.23.2",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.21.5",
+    "archiver": "^6.0.1",
+    "aws-sdk": "^2.1461.0",
+    "babel-preset-minify": "^0.5.2",
+    "chokidar": "^3.5.3",
+    "colors": "^1.4.0",
+    "formidable-serverless": "^1.1.1",
+    "google-auth": "^0.0.1",
+    "google-auth-library": "^9.1.0",
+    "googleapis": "^144.0.0",
+    "live-plugin-manager": "^1.0.0",
+    "mongodb": "^6.3.0",
+    "muser_common": "^3.0.0",
+    "node-fetch": "^3.3.1",
+    "node-static": "^0.7.11",
+    "sharp": "^0.33.4",
+    "short-uuid": "^4.2.2",
+    "tranzak-node": "github:HolyCorn-Software/tranzak-node",
+    "twitter-api-sdk": "^1.2.1",
+    "uglify-js": "^3.19.3",
+    "unzipper": "^0.10.11",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2"
+  }
+}

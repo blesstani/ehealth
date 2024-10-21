@@ -1,0 +1,10 @@
+{
+    "admin": [
+        {
+            "label": "Consultations",
+            "name": "health_appointment_admin",
+            "group": "health_admin",
+            "view": "./widget.mjs"
+        }
+    ]
+}

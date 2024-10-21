@@ -1,0 +1,154 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet controls the device-frame widget
+*/
+
+.hc-ehealthi-device-frame {
+    display: flex;
+    justify-content: center;
+}
+
+.hc-ehealthi-device-frame>.container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+    width: clamp(150px, 100vw, 550px);
+    font-family: comfortaa, bariolBold;
+}
+
+.hc-ehealthi-device-frame>.container>.content {
+    padding-left: clamp(0.5em, 7vw, 2em);
+    padding-right: clamp(0.5em, 7vw, 2em);
+    padding-top: 0.75em;
+}
+
+
+.hc-ehealthi-device-frame>.container>.nav {
+    position: absolute;
+    height: 5em;
+    padding-top: 0.75em;
+    padding-bottom: 0.5em;
+    top: calc(100% - 5em - 0.75em - 0.5em);
+    background-color: var(--theme-color);
+    width: 100%;
+    border-radius: 2em;
+    z-index: 1;
+    font-weight: 900;
+    font-size: clamp(0.75em, 1em, min(3.75vw, 2.25vh));
+    transition: 0.25s 0.125s;
+}
+
+
+/* About the navigation section of the widget */
+
+.hc-ehealthi-device-frame-nav>.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-device-frame-nav>.container>.highlighter {
+    position: absolute;
+    min-width: 2em;
+    min-height: 2em;
+    background-color: var(--theme-color);
+    opacity: 0.6;
+    filter: brightness(120%);
+    border-radius: 1.25em;
+    --padding-x: 2.5em;
+    --padding-y: 0.5em;
+    top: calc(var(--highlighter-y, 1em) - (var(--padding-y) / 2));
+    left: calc(var(--highlighter-x, 1em) - (var(--padding-x) / 2));
+    width: calc(var(--highlighter-width, 4em) + var(--padding-x));
+    height: calc(var(--highlighter-height, 4em) + var(--padding-y));
+    transition: 0.5s 0.125s;
+    z-index: -1;
+}
+
+.hc-ehealthi-device-frame-nav>.container>.items {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+.hc-ehealthi-device-frame-nav>.container>.items>.item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.hc-ehealthi-device-frame-nav>.container>.items>.item>.icon {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.hc-ehealthi-device-frame-nav>.container>.items>.item>.icon>* {
+    width: 100% !important;
+    height: 100% !important;
+    fill: currentColor;
+}
+
+.hc-ehealthi-device-frame-nav>.container>.items>.item>.icon>img[src*="/$/shared/static/logo.png"] {
+    filter: invert(1) grayscale(1);
+}
+
+/* This section controls the actual stack of views on the widget */
+.hc-ehealthi-device-frame-view-container {
+    position: absolute;
+    width: calc(100% - (clamp(0.5em, 7vw, 2em) * 2));
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s 0.125s;
+    font-size: 0em;
+}
+
+.hc-ehealthi-device-frame-view-container>.container>.hc-back-forth>.container>.slider>.hc-slide-container>.container>.primary-content {
+    --hc-ehealthi-device-frame-view-available-height: calc(100vh - 6.25em - 2em);
+    height: calc(var(--hc-ehealthi-device-frame-view-available-height) + 0.5em);
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.hc-ehealthi-device-frame-view-container>.container>.hc-back-forth.can-go-back>.container>.slider>.hc-slide-container>.container>.primary-content {
+    --hc-ehealthi-device-frame-view-available-height: calc(100vh - 6.25em - 2em - 1em);
+    --hc-telep-mobile-device-frame-content-height: calc(100vh - 6.25em - 1em);
+}
+
+
+.hc-ehealthi-device-frame-view-container>.container {
+    height: 100%;
+}
+
+.hc-ehealthi-device-frame-view-container.visible {
+    opacity: 1;
+    pointer-events: all;
+    font-size: 1em;
+}
+
+.hc-ehealthi-device-frame-view-container.animating>.container>.hc-back-forth>.container>.slider>.hc-slide-container>.container>.primary-content {
+    overflow: hidden;
+}
+
+
+/** 
+    UI adjustments, when the mobile OS's keyboar is (probably) active.
+ */
+
+body.appframe-mini .hc-ehealthi-device-frame>.container>.nav {
+    font-size: 0em;
+    transition: 0.25s 0.5s;
+}
+
+body.appframe-mini .hc-ehealthi-device-frame-nav>.container>.highlighter {
+    transition: 0.25s 0.25s;
+    opacity: 0;
+}
+
+
+
+body.appframe-mini .hc-ehealthi-device-frame-view-container>.container>.hc-back-forth>.container>.slider>.hc-slide-container>.container>.primary-content {
+    --hc-ehealthi-device-frame-view-available-height: calc(100vh - 1em);
+}

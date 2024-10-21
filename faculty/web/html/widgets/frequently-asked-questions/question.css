@@ -1,0 +1,32 @@
+/*  
+    Copyright 2023 HolyCorn Software
+    The eHealthi Project
+    This stylesheet makes for the layout of a single question.
+*/
+
+.hc-ehealthi-frequently-asked-questions-item.hc-cayofedpeople-accordion-item>.container {
+    gap: 0.5em;
+}
+
+.hc-ehealthi-frequently-asked-questions-item-content>.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-ehealthi-frequently-asked-questions-item-content>.container>.bottom {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hc-ehealthi-frequently-asked-questions-item-content>.container>.bottom>.logo {
+    position: relative;
+    width: 3em;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.hc-ehealthi-frequently-asked-questions-item-content>.container>.bottom>.logo>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

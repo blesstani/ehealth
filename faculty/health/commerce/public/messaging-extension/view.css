@@ -1,0 +1,172 @@
+/*  
+    Copyright 2024 HolyCorn Software
+    The eHealthi Project
+    This stylesheet works on the looks of a message in which a user was prescribed a lab test
+*/
+
+
+.hc-ehealthi-health-commerce-view-extension>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1.25em;
+    border-radius: 0.75em;
+    max-width: 22em;
+}
+
+.hc-ehealthi-health-commerce-view-extension>.container>.icon {
+    width: 11.5em;
+    height: 11.5em;
+    align-self: center;
+}
+
+.hc-ehealthi-health-commerce-view-extension>.container>.caption {
+    font-size: 1.75em;
+    font-weight: 900;
+    font-family: bariolBold;
+    text-align: center;
+}
+
+.hc-ehealthi-health-commerce-view-extension>.container>.items {
+    margin-block: 0px;
+}
+
+
+.hc-ehealthi-health-commerce-view-extension>.container>.amount {
+    padding-left: 1.25em;
+    display: inline-flex;
+    gap: 1ex;
+    align-items: center;
+}
+
+
+.hc-ehealthi-health-commerce-view-extension>.container>.amount>.data {
+    font-weight: 700;
+}
+
+.hc-ehealthi-health-commerce-view-extension>.container>.amount>.status {
+    width: 1em;
+    height: 1em;
+    padding: 0.25em;
+    border-radius: 100%;
+    border: 0.125em solid currentColor;
+    color: green;
+    font-size: 0em;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.hc-ehealthi-health-commerce-view-extension.paid>.container>.amount>.status {
+    font-size: 0.75em;
+    opacity: 1;
+}
+
+
+.hc-ehealthi-health-commerce-view-extension>.container>.service-provider {
+    padding-left: 1em;
+}
+
+.hc-ehealthi-health-commerce-view-extension>.container>.service-provider .hc-hcts-modernuser-inline-profile>.container {
+    font-size: 0.85em;
+}
+
+.hc-ehealthi-health-commerce-view-extension>.container>.service-provider .hc-hcts-modernuser-inline-profile>.container>.main {
+    gap: 0.5em;
+}
+
+.hc-ehealthi-health-commerce-view-extension>.container>.service-provider .hc-hcts-modernuser-inline-profile>.container>.main>.icon {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.hc-ehealthi-health-commerce-view-extension>.container>.service-provider .hc-hcts-modernuser-inline-profile>.container>.main>.label {
+    max-width: clamp(2em, 10em, 100%);
+    white-space: normal;
+}
+
+.hc-ehealthi-health-commerce-view-extension>.container>.actions {
+    display: flex;
+    justify-content: center;
+}
+
+.hc-ehealthi-health-commerce-view-extension>.container>.actions>*>.hc-action-button {
+    display: flex;
+}
+
+.hc-ehealthi-health-commerce-view-extension>.container>.actions>*>.hc-action-button>.container {
+    border-radius: 0.95em;
+    background-color: white;
+    color: black;
+    min-width: 3.5em;
+    font-weight: 900;
+    font-family: bariolBold;
+    transition: 0s;
+}
+
+.hc-ehealthi-health-commerce-view-extension>.container>.actions>* {
+    margin-inline-start: 1em;
+    transition: 0.35s;
+}
+
+.hc-ehealthi-health-commerce-view-extension>.container>.actions>*:empty {
+    display: none;
+}
+
+
+
+.hc-ehealthi-health-commerce-view-extension.cancel-action-pending>.container>.actions>*:not(.cancel) {
+    font-size: 0em;
+    opacity: 0;
+    flex-grow: 0;
+}
+
+
+
+.hc-ehealthi-health-commerce-view-extension:is(.cancel-action-pending, .canceled, .completed)>.container>.actions>:is(.cancel, .manage, .view-results) {
+    flex-grow: 1;
+    transition: 0.25s, 0.25s 0.75s flex-grow;
+}
+
+.hc-ehealthi-health-commerce-view-extension:is(.completed)>.container>.actions>:is(.cancel) {
+    flex-grow: unset;
+}
+
+.hc-ehealthi-health-commerce-view-extension>.container>.actions>:is(.manage):not(.empty) {
+    flex-grow: 1;
+}
+
+.hc-ehealthi-health-commerce-view-extension:not(:is(.completed, .paid))>.container>.actions>.view-results {
+    font-size: 0em;
+    opacity: 0;
+}
+
+.hc-ehealthi-health-commerce-view-extension:is(.completed, .paid)>.container>.actions>:not(.view-results) {
+    font-size: 0em;
+    opacity: 0;
+}
+
+
+.hc-ehealthi-health-commerce-view-extension:is(.completed, .paid)>.container>.actions>:is(.view-results, .manage) {
+    font-size: 1em;
+    opacity: 1;
+    flex-grow: 1;
+}
+
+.hc-ehealthi-health-commerce-view-extension:is(.completed)>.container>.actions>:is(.allow-patient-view) {
+    font-size: 1em;
+    opacity: 1;
+    flex-grow: 1;
+}
+
+.hc-ehealthi-health-commerce-view-extension:not(.completed)>.container>.actions>:is(.allow-patient-view) {
+    font-size: 0em;
+    opacity: 0;
+    flex-grow: 0;
+}
+
+.hc-ehealthi-health-commerce-view-extension.allow-patient-view-action-pending>.container>.actions>*:not(.allow-patient-view) {
+    font-size: 0em;
+    opacity: 0;
+    flex-grow: 0;
+}
