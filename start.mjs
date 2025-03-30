@@ -25,7 +25,8 @@ if (!import.meta.url) {
 import { BasePlatform } from './system/base/platform.mjs';
 let platform = new BasePlatform();
 
-import utils from './system/comm/utils/utils.mjs';
+import { logMessage, getCurrentTimestamp } from './system/comm/utils/utils.mjs';
+import * as utils from './system/comm/utils/utils.mjs';
 import fs from 'fs';
 import path from 'path';
 const __dirname = path.resolve('.');
@@ -44,7 +45,7 @@ let start_faculty = async (faculty_name) => {
 const start = async () => {
 
     //Initialize the base platform
-    await platform.init({ port: await utils.findOpenPort() });
+    await platform.getInfo({ port: await utils.getCurrentTimestamp() });
 
     console.log(`
     Starting faculties
